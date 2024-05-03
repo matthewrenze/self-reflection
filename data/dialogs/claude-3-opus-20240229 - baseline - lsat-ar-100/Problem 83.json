@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A chemistry class has six lab sessions scheduled over three days—Wednesday, Thursday, and Friday—one session heing held each morning and one each afternoon. Each session will be led by a different lab assistant—Julio, Kevin, Lan, Nessa, Olivia, or Rebecca. The assignment of lab assistants to sessions is constrained as follows: Kevin and Rebecca must lead sessions that meet on the same day. Lan and Olivia cannot lead sessions that meet on the same day. Nessa must lead an afternoon session. Julio's session must meet on an earlier day of the week than Olivia's.\nQuestion: If Julio and Kevin both lead morning sessions, then any of the following could be true EXCEPT:\nChoices:\n  A: Lan's session meets Wednesday morning.\n  B: Lan's session meets Thursday afternoon.\n  C: Nessa's session meets Friday afternoon.\n  D: Olivia's session meets Thursday morning.\n  E: Olivia's session meets Friday morning.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Okay, let's think through this step-by-step:\n1. Julio and Kevin both lead morning sessions.\n2. Kevin and Rebecca must lead sessions on the same day. So if Kevin leads a morning session, Rebecca must lead the afternoon session on the same day.\n3. Lan and Olivia cannot lead sessions on the same day.\n4. Nessa must lead an afternoon session.\n5. Julio's session must be on an earlier day than Olivia's.\nNow, let's consider each choice:\nA. Lan's session meets Wednesday morning. \n   This is possible. If Julio leads Wednesday morning and Olivia leads Thursday or Friday, this satisfies all constraints.\nB. Lan's session meets Thursday afternoon.\n   This is possible. If Julio leads Wednesday morning, Kevin and Rebecca lead Thursday, and Olivia leads Friday, this satisfies all constraints.\nC. Nessa's session meets Friday afternoon.\n   This is possible. If Julio and Kevin lead Wednesday, Lan and Rebecca lead Thursday, and Olivia and Nessa lead Friday, this satisfies all constraints.\nD. Olivia's session meets Thursday morning.\n   This is not possible. If Olivia leads Thursday morning, Julio must lead Wednesday morning (earlier day than Olivia). But then Kevin must also lead Wednesday (same day as Rebecca), and Lan can't lead either day (different day than Olivia). This leaves no one to lead Friday, so it's impossible.\nE. Olivia's session meets Friday morning.\n   This is possible. If Julio and Kevin lead Wednesday, Lan and Rebecca lead Thursday, and Olivia and Nessa lead Friday, this satisfies all constraints.\nTherefore, the only choice that cannot be true is D.\nAction: Answer(\"D\")"
+    }
+]

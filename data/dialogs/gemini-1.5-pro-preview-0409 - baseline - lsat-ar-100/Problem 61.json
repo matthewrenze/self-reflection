@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A government needs to assign new ambassadors to Venezuela, Yemen, and Zambia. The candidates for these ambassadorships are Jaramillo, Kayne, Landon, Novetzke, and Ong. One ambassador will be assigned to each country, and no ambassador will be assigned to more than one country. The assignment of the ambassadors must meet the following constraints: Either Kayne or Novetzke, but not both, is assigned to one of the ambassadorships. If Jaramillo is assigned to one of the ambassadorships, then so is Kayne. If Ong is assigned as ambassador to Venezuela, Kayne is not assigned as ambassador to Yemen. If Landon is assigned to an ambassadorship, it is to Zambia.\nQuestion: Which one of the following CANNOT be true?\nChoices:\n  A: Jaramillo is assigned as ambassador to Zambia.\n  B: Kayne is assigned as ambassador to Zambia.\n  C: Novetzke is assigned as ambassador to Zambia.\n  D: Landon is not assigned to an ambassadorship.\n  E: Ong is not assigned to an ambassadorship.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n*  **Constraint 1:** Either Kayne or Novetzke, but not both, must be assigned.\n*  **Constraint 2:** If Jaramillo is assigned, then Kayne must also be assigned.\n*  **Constraint 3:** If Ong is assigned to Venezuela, Kayne cannot be assigned to Yemen.\n*  **Constraint 4:** If Landon is assigned, it must be to Zambia.\nLet's analyze each option:\n*  **A: Jaramillo to Zambia:** This could be true as it doesn't directly contradict any constraint.\n*  **B: Kayne to Zambia:** This could be true as it doesn't directly contradict any constraint.\n*  **C: Novetzke to Zambia:** This could be true as it doesn't directly contradict any constraint.\n*  **D: Landon not assigned:** This could be true as Landon only has one possible assignment (Zambia).\n*  **E: Ong not assigned:** If Ong is not assigned, and let's say Jaramillo is assigned, then Kayne must also be assigned (Constraint 2). This leaves only one remaining spot for either Novetzke or Landon. However, if Landon is assigned, it must be to Zambia (Constraint 4), leaving no place for Novetzke, which violates Constraint 1 (either Kayne or Novetzke must be assigned). \nTherefore, the scenario where Ong is not assigned creates a contradiction.\nAction: Answer(\"E\") \n"
+    }
+]

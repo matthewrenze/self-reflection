@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: For the school paper, five students—Jiang, Kramer, Lopez, Megregian, and O'Neill—each review one or more of exactly three plays: Sunset, Tamerlane, and Undulation, but do not review any other plays. The following conditions must apply: Kramer and Lopez each review fewer of the plays than Megregian. Neither Lopez nor Megregian reviews any play Jiang reviews. Kramer and O'Neill both review Tamerlane. Exactly two of the students review exactly the same play or plays as each other.\nQuestion: If Jiang does not review Tamerlane, then which one of the following must be true?\nChoices:\n  A: Jiang reviews Sunset.\n  B: Lopez reviews Undulation.\n  C: Megregian reviews Sunset.\n  D: Megregian reviews Tamerlane.\n  E: O'Neill reviews Undulation.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Let's think through this step-by-step:\n1. Kramer and O'Neill both review Tamerlane.\n2. Kramer and Lopez each review fewer plays than Megregian. So Megregian must review at least 2 plays.\n3. Neither Lopez nor Megregian reviews any play Jiang reviews. So the plays Jiang reviews cannot be reviewed by Lopez or Megregian.\n4. Exactly two students review exactly the same play(s). We know this is Kramer and O'Neill, who both review Tamerlane.\n5. If Jiang does not review Tamerlane, then given condition 3, Megregian must review Tamerlane (as Lopez reviews fewer plays than Megregian).\nTherefore, if Jiang does not review Tamerlane, Megregian must review Tamerlane.\nAction: Answer(\"D\")"
+    }
+]

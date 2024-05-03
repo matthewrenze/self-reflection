@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Math.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Math\nQuestion: If n is such that 36 ≤ n ≤ 72, then x = (n2 + 2√n(n + 4) + 16) / (n+ 4√n+ 4) satisfies\nChoices:\n  A: 20 < x < 54\n  B: 23 < x < 58\n  C: 25 < x < 64\n  D: 28 < x < 60\n  E: None of these\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nFor the given range of n, we find the range of possible values for x.\n\nStep 1: Simplify the expression for x:\n= (n^2 + 2n + 8) / (n + 4)\n\nStep 2: Find the range of values for the numerator and denominator separately:\nNumerator (N): \n36^2 + 2*36*(36+4) + 16 = 1296 + 2880 + 16 = 4192\n72^2 + 2*72*(72+4) + 16 = 5184 + 2160 + 16 = 7360\nSo, 4192 ≤ N ≤ 7360\n\nDenominator (D): \n36 + 4*36^0.5 + 4 = 36 + 216^0.5 + 4 ≈ 36 + 64 + 4 = 104\n72 + 4*72^0.5 + 4 = 72 + 288^0.5 + 4 ≈ 72 + 108 + 4 = 184\nSo, 104 ≤ D ≤ 184\n\nStep 3: Now, find the range of values for x by dividing the ranges of N and D:\nFor the lower bound of x, divide the upper bound of D by the lower bound of N:\n184/4192 ≤ x\n≈ 0.0439 < x\n\nFor the upper bound of x, divide the lower bound of D by the upper bound of N:\n104/7360 ≤ x\n≈ 0.0141 < x\n\nSo, we've found that 0.0439 < x < infinity, which doesn't match any of the given ranges.\n\nAction: Answer(\"E\")"
+    }
+]

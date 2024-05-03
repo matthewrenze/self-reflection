@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Logic.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Logic\nContext: A heating station has 5 valves to control the delivery of steam to the outside.The following operating rules must be followed when using these valves? (1) If valve No.1 is opened, then valve No.2 must be opened and valve No.5 must be closed.(2) If valve No.2 or valve No.5 is opened, valve No.4 must be closed.(3) No.3 valve and No.4 valve cannot be closed at the same time.\nQuestion: Now we need to open the No.1 valve, which two valves are to be opened at the same time?\nChoices:\n  A: No.2 valve and No.4 valve.\n  C: No.3 valve and No.5 valve.\n  B: No.2 valve and No.3 valve.\n  D: No.4 valve and No.5 valve.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Let's think through this step-by-step:\n1. We are told that valve No.1 needs to be opened.\n2. According to rule (1), if valve No.1 is opened, then:\n   - Valve No.2 must be opened, and\n   - Valve No.5 must be closed.\n3. Now, according to rule (2), if valve No.2 is opened, then:\n   - Valve No.4 must be closed.\n4. Rule (3) states that valve No.3 and valve No.4 cannot be closed at the same time. \n   - We know valve No.4 must be closed (from step 3).\n   - Therefore, valve No.3 must be open to satisfy rule (3).\n5. In summary, when valve No.1 is opened:\n   - Valve No.2 must be opened (rule 1)\n   - Valve No.3 must be opened (to satisfy rule 3, since valve No.4 is closed)\n   - Valve No.4 must be closed (because valve No.2 is open, according to rule 2)\n   - Valve No.5 must be closed (rule 1)\nTherefore, the two valves that must be opened at the same time as valve No.1 are valve No.2 and valve No.3.\nAction: Answer(\"B\")"
+    }
+]

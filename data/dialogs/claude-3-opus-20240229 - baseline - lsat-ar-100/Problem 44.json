@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: On each of exactly seven consecutive days (day 1 though day 7), a pet shop features exactly one of three breeds of kitten—Himalayan, Manx, Siamese—and exactly one of three breeds of puppy—Greyhound, Newfoundland, Rottweiler. The following conditions must apply: Greyhounds are featured on day 1. No breed is featured on any two consecutive days. Any breed featured on day 1 is not featured on day 7. Himalayans are featured on exactly three days, but not on day 1. Rottweilers are not featured on day 7, nor on any day that features Himalayans.\nQuestion: If Himalayans are not featured on day 7, which one of the following could be true?\nChoices:\n  A: Greyhounds are featured on days 3 and 5.\n  B: Newfoundlands are featured on day 3.\n  C: Rottweilers are featured on day 6.\n  D: Rottweilers are featured only on day 3.\n  E: Rottweilers are featured on exactly three days.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Let's think through this step-by-step:\n1. Greyhounds are featured on day 1, so they can't be featured on days 2, 7 (due to the consecutive day rule), or day 6 (because then they would be featured on two consecutive days, 6 and 7).\n2. Himalayans are featured on exactly three days, but not on day 1 or 7. So they must be featured on three of the days 2, 3, 4, 5, 6.\n3. Rottweilers can't be featured on the same day as Himalayans, or on day 7.\nNow, let's look at each choice:\nA: If Greyhounds were featured on days 3 and 5, this would violate the rule that no breed is featured on any two consecutive days. So this can't be true.\nB: Newfoundlands could be featured on day 3, as there are no rules against this. This could be true.\nC: If Rottweilers were featured on day 6, this would mean Himalayans couldn't be featured on day 6. This is possible given the constraints. This could be true.\nD: If Rottweilers were featured only on day 3, this would mean Himalayans couldn't be featured on day 3. This is possible given the constraints. This could be true.\nE: If Rottweilers were featured on exactly three days, they would have to be featured on days 2, 4, and 6 (given the other constraints). But this would mean Himalayans couldn't be featured on days 2, 4, or 6, and since they can't be featured on days 1 or 7 either, there wouldn't be enough days for them to be featured on exactly three days. So this can't be true.\nTherefore, B, C, and D could be true, but A and E cannot be true.\nAction: Answer(\"B\")"
+    }
+]

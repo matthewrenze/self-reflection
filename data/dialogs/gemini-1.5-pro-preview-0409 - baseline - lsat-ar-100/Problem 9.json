@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: An administrator must assign parking spaces to six new employees: Robertson, Souza, Togowa, Vaughn, Xu, and Young. Each of the six employees must be assigned one of the following parking spaces: #1, #2, #3, #4, #5, or #6. No two employees can be assigned the same parking space. The following rules govern the assignment of parking spaces: Young must be assigned a higher-numbered parking space than Togowa. Xu must be assigned a higher-numbered parking space than Souza. Robertson must be assigned a higher-numbered parking space than Young. Robertson must be assigned parking space #1, #2, #3, or #4.\nQuestion: If Young is assigned a higher-numbered parking space than Souza, then which one of the following could be true?\nChoices:\n  A: Togowa is assigned parking space #1.\n  B: Young is assigned parking space #2.\n  C: Robertson is assigned parking space #3.\n  D: Souza is assigned parking space #3.\n  E: Vaughn is assigned parking space #4.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n*   We know Young > Togowa and Xu > Souza.\n*   We also know Robertson > Young and Robertson must be in spaces #1-4.\n**Analyzing options:**\n*   **A:** If Togowa is in #1, then Young must be in #2 or higher, which contradicts the rule that Robertson (who must be higher than Young) must be in #1-4. So, A is not possible.\n*   **B:** If Young is in #2, then Robertson must be in #1. This satisfies all conditions. So, B is possible.\n*   **C & D:** If Robertson is in #3 or Souza is in #3, then Young and Xu would need to be in #4-6, leaving no space for Robertson to be higher than Young. So, C and D are not possible.\n*   **E:**  Vaughn's position doesn't affect the given rules and conditions. So, E is possible.\nTherefore, both B and E could be true. However, since we can only choose one, we'll go with the one that directly addresses the question about Young's position.\nAction: Answer(\"B\") \n"
+    }
+]

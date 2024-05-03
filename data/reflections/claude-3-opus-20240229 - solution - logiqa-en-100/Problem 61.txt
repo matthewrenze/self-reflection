@@ -1,0 +1,17 @@
+Solution:
+Given:
+- There are 6 assistants (F, G, H, I, M, P) and 3 departments. 
+- Each department has 3 assistants in charge.
+- Each assistant is in charge of at least one department.
+- Only one assistant is in charge of all three departments.
+- F and G cannot be in charge of the same department.
+- H and I cannot be in charge of the same department.
+- F and M are not in charge of the same department.
+Let's call the departments X, Y, and Z.
+From the 4th condition, we know one assistant must be in charge of all three departments. Let's suppose it's P (we'll see later that it must be).
+Now, F and M are not in charge of the same department. So they must collectively be in charge of all three, otherwise the assistant in charge of the remaining department would have to be in charge of all three, contradicting that only one assistant has this property. 
+Without loss of generality, suppose F is in charge of X and Y, and M is in charge of Z.
+G can't be in charge of X or Y (since F is), so it must be in charge of Z.
+H and I can't be in charge of the same department. The only way to satisfy this is if one of them is in charge of X and the other Y (since F already occupies X and Y, and M and G occupy Z).
+The only remaining assistant is P, who as we assumed, must be in charge of all three departments. 
+Therefore, I and P are both in charge of X and Y, so the correct answer is [REDACTED].

@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A loading dock consists of exactly six bays numbered 1 through 6 consecutively from one side of the dock to the other. Each bay is holding a different one of exactly six types of cargo—fuel, grain, livestock, machinery, produce, or textiles. The following apply: The bay holding grain has a higher number than the bay holding livestock. The bay holding livestock has a higher number than the bay holding textiles. The bay holding produce has a higher number than the bay holding fuel. The bay holding textiles is next to the bay holding produce.\nQuestion: If bay 4 is holding produce, then for exactly how many of the six bays is the type of cargo that bay is holding completely determined?\nChoices:\n  A: two\n  B: three\n  C: four\n  D: five\n  E: six\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n*   Bay 4 holds produce, so Bay 5 or Bay 6 must hold textiles (given the constraint \"The bay holding textiles is next to the bay holding produce\").\n*   Since textiles are in Bay 5 or Bay 6, livestock must be in Bay 2 or Bay 3 (given \"The bay holding livestock has a higher number than the bay holding textiles\").\n*   Grain must then be in Bay 3 or Bay 4 (given \"The bay holding grain has a higher number than the bay holding livestock\"). But since Bay 4 is produce, grain must be in Bay 3.\n*   This leaves fuel and machinery for Bay 1 and Bay 2, but their order is not determined. \n*   Therefore, the type of cargo is completely determined for Bay 3 (grain), Bay 4 (produce), and Bay 5 or Bay 6 (textiles).\nAction: Answer(\"B\") \n"
+    }
+]

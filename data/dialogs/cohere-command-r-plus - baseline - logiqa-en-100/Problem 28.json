@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Logic.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Logic\nContext: A provincial Go team coach selects 4 of the 7 players from E, F, G, H, J, K and M to participate in the professional league.The selection must meet the following conditions? E or F has one person to participate, but not both .One of J or K will participate, but not both.If J participates, then G participates.Unless F participates, M does not participate.\nQuestion: Which two of the following players will be selected by the coach to make the four-person team the only choice?\nChoices:\n  A: F and H\n  C: G and M\n  B: G and J\n  D: H and M\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nFrom the conditions, we know that either E or F will be selected, but not both. Let's assume E is selected first. \n\nNext, we know that either J or K will be selected, but not both. If we select J, then according to the conditions, we must also select G. So, if E and J are selected, the remaining two selections must be G and one of the remaining options (H, K, or M). \n\nWe also know that if F is not selected, then M will not be selected. So, in this case, M is eliminated, and we are left with H and K as the remaining options. \n\nTherefore, the coach's only options to complete the four-person team are: \n- E, G, J, H\n- E, G, J, K\n\nSo, the correct answer is neither A, B, C, nor D.\nAction: None of the Above"
+    }
+]

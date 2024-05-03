@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Logic.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Logic\nContext: A provincial Go team coach selects 4 of the 7 players from E, F, G, H, J, K and M to participate in the professional league.The selection must meet the following conditions? E or F has one person to participate, but not both .One of J or K will participate, but not both.If J participates, then G participates.Unless F participates, M does not participate.\nQuestion: If H does not participate in the game, which of the following two players must be included in the game?\nChoices:\n  A: F and G\n  C: F and K\n  B: E and M\n  D: G and K\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nAdvice:\n - Always read the question carefully and understand the problem.\n - Always consider all possible scenarios based on the given conditions.\n - Always eliminate scenarios that do not meet the conditions.\n - Always identify the players that must be included in each scenario.\n - Always choose the answer that matches the players that must be included in all scenarios.\n - Never make assumptions about the problem without verifying them with the given information.\n - Always double-check your reasoning and final answer.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\nSince H does not participate, there are 3 spots left to fill.\n\n1. If E participates, then F cannot participate. Since M can only participate if F participates, M also cannot participate. Therefore, J must participate since either J or K must participate. If J participates, then G must also participate. So the players are E, J, and G. There is one spot left, which can only be filled by K since M cannot participate.\n2. If F participates, then E cannot participate. M can participate since F participates. Therefore, J must participate since either J or K must participate. If J participates, then G must also participate. So the players are F, J, G, and M.\n\nIn both scenarios, G and J must participate. However, the question asks for two players that must be included in the game. Therefore, we must look for a scenario where G and J are not the only two players that must be included.\n\nIn scenario 1, E, J, G, and K must participate. Therefore, G and K must be included in the game.\n\nAction: Answer(\"D\")"
+    }
+]

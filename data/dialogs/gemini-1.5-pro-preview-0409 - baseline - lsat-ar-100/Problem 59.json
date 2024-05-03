@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: At a concert, exactly eight compositions—F, H, L, O, P, R, S, and T—are to be performed exactly once each, consecutively and one composition at a time. The order of their performance must satisfy the following conditions: T is performed either immediately before F or immediately after R. At least two compositions are performed either after F and before R, or after R and before F. O is performed either first or fifth. The eighth composition performed is either L or H. P is performed at some time before S. At least one composition is performed either after O and before S, or after S and before O.\nQuestion: P CANNOT be performed\nChoices:\n  A: second\n  B: third\n  C: fourth\n  D: sixth\n  E: seventh\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n*   **Rule 1:** T is either before F or after R (TF or RT).\n*   **Rule 2:** At least two compositions between F and R.\n*   **Rule 3:** O is either 1st or 5th.\n*   **Rule 4:** 8th is either L or H.\n*   **Rule 5:** P before S.\n*   **Rule 6:** At least one composition between O and S.\n**Analysis:**\n*   **Option A (2nd):** If P is 2nd, then S must be after (Rule 5). This leaves no room for T, F, and R with at least two compositions between them (Rule 2). So, **A is possible**.\n*   **Option B (3rd):** Similar to option A, if P is 3rd, S must be after, leaving no room for T, F, and R with the required spacing. So, **B is possible**.\n*   **Option C (4th):** If P is 4th, S can be 5th (if O is 1st) or after 5th (if O is 5th). This allows for T, F, and R to be placed with at least two compositions between them. So, **C is possible**.\n*   **Option D (6th):** If P is 6th, S must be 7th or 8th (Rule 5). This leaves only one position before P, making it impossible to place T, F, and R with two compositions between them (Rule 2). So, **D is NOT possible**.\n*   **Option E (7th):** Similar to option D, if P is 7th, S must be 8th, leaving no room for T, F, and R with the required spacing. So, **E is NOT possible**.\nAction: Answer(\"D\") \n"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Math.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Math\nQuestion: $$\\begin{aligned}& 2 x-3 y=-14 \\\\& 3 x-2 y=-6\\end{aligned}$$If $(x, y)$ is a solution to the system of equations above, what is the value of $x-y$ ?\nChoices:\n  A: -20\n  B: $\\quad-8$\n  C: -4\n  D: 8\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nInstructions:\n\n1. Multiply the first equation by 3 and the second equation by 2 to make the coefficients of $x$ equal.\n2. Add (or subtract) the equations to eliminate one variable.\n3. Solve for the remaining variable.\n4. Substitute the value found into the original equation to find the other variable.\n5. Calculate the value of $x - y$ using the values of $x$ and $y$.\n6. Double-check your calculations and the final answer.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Reflection: I made a calculation error when performing step 4. I found the value of $y$ correctly, but when substituting it back into one of the original equations, I incorrectly calculated $x$. I need to pay closer attention to my arithmetic to avoid similar mistakes in the future.\n\nThought: \nMultiplying the first equation by 3 and the second equation by 2, we get:\n$\\begin{aligned} 6x-9y &= -42 \\\\ 6x-4y &= -12 \\end{aligned}$\n\nAdding the two equations eliminates $y$:\n$10x = -54 \\implies x = -\\frac{27}{5}$\n\nSubstituting $x$ back into one of the original equations to solve for $y$:\n$2 \\left(-\\frac{27}{5}\\right) - 3y = -14 \\implies y = -\\frac{2}{5}$\n\nNow, we can calculate the value of $x - y$:\n$\\left(-\\frac{27}{5}\\right) - \\left(-\\frac{2}{5}\\right) = -8$\nAction: Answer(\"B\")"
+    }
+]

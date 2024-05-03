@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: An administrator must assign parking spaces to six new employees: Robertson, Souza, Togowa, Vaughn, Xu, and Young. Each of the six employees must be assigned one of the following parking spaces: #1, #2, #3, #4, #5, or #6. No two employees can be assigned the same parking space. The following rules govern the assignment of parking spaces: Young must be assigned a higher-numbered parking space than Togowa. Xu must be assigned a higher-numbered parking space than Souza. Robertson must be assigned a higher-numbered parking space than Young. Robertson must be assigned parking space #1, #2, #3, or #4.\nQuestion: If Robertson is assigned parking space #3, then which one of the following must be true?\nChoices:\n  A: Souza is assigned parking space #4.\n  B: Togowa is assigned parking space #2.\n  C: Vaughn is assigned parking space #5.\n  D: Xu is assigned parking space #6.\n  E: Young is assigned parking space #2.\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nAdvice:\n- Read and understand all the conditions and rules governing the parking space assignments.\n- Carefully interpret the conditions, avoiding assumptions or oversimplifications.\n- Systematically work through each possible assignment, considering all conditions and constraints.\n- Remember that the question asks for a definite consequence, so focus on identifying the options that must be true based on the given information.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: If Robertson is assigned parking space #3, then Young must be assigned a higher number, which is either #4, #5, or #6.\n\nGiven that Robertson must be assigned a higher number than Young, this means Young could be assigned #4, with Robertson taking #5 or #6, which doesn't satisfy the condition. Therefore, Young must be assigned #5 or #6.\n\nNow, considering the condition that Young must have a higher number than Togowa, we can deduce that Togowa must have #2, #3, or #4. Togowa cannot have #4, as this would force Young into #6, leaving no suitable options for Robertson. So, Togowa could be assigned #2 or #3.\n\nWith these assignments, the conditions for Xu and Souza are met, as they can be assigned any of the remaining spaces, which are higher-numbered.\n\nSo, the only definite consequence of assigning Robertson parking space #3 is that Togowa will be assigned #2.\nAction: Answer(\"B\")"
+    }
+]

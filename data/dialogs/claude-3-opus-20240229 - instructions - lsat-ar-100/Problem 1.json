@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: Exactly five witnesses—Franco, Garcia, Hong, Iturbe, and Jackson—are to be scheduled to testify at a hearing that is to take exactly three days of one week—Monday, Tuesday, and Wednesday. Each witness testifies on exactly one day of the hearing. The schedule must meet the following conditions: Franco does not testify on the same day that Garcia testifies. Iturbe testifies on Wednesday. Exactly two witnesses testify on Tuesday. Hong does not testify on Monday. At least one witness testifies on Monday.\nQuestion: Which one of the following CANNOT be true of the schedule?\nChoices:\n  A: Franco is the only witness scheduled to testify on Monday.\n  B: Franco is scheduled to testify on the same day as Iturbe.\n  C: Garcia and Hong are both scheduled to testify on Tuesday.\n  D: Garcia is the only witness scheduled to testify on Monday and Hong is one of two witnesses scheduled to testify on Wednesday.\n  E: Jackson is scheduled to testify on Tuesday and two witnesses are scheduled to testify on Monday.\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nInstructions:\n1. Carefully read the question and constraints.\n2. Identify the fixed constraints that must be met.\n3. Analyze each answer choice one by one.\n4. For each choice, check if it violates any of the given constraints.\n5. If a choice violates a constraint, rule it out as a possibility.\n6. Choose the answer that cannot be possible without violating constraints.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Okay, let's think through this step-by-step:\nThe fixed constraints given are:\n1. Iturbe testifies on Wednesday. \n2. Exactly two witnesses testify on Tuesday.\n3. Hong does not testify on Monday.\n4. At least one witness testifies on Monday.\n5. Franco does not testify the same day as Garcia.\nNow let's analyze each answer choice:\nA: Franco is the only witness scheduled to testify on Monday.\nThis satisfies constraints 3 and 4. It doesn't violate any others. So this could be possible.\nB: Franco is scheduled to testify on the same day as Iturbe.\nThis violates constraint 1, as Iturbe must testify on Wednesday. So this is not possible.\nC: Garcia and Hong are both scheduled to testify on Tuesday. \nThis satisfies constraint 2. It doesn't violate any others. So this could be possible.\nD: Garcia is the only witness scheduled to testify on Monday and Hong is one of two witnesses scheduled to testify on Wednesday.\nThis violates constraint 3, as Hong cannot testify on Monday. So this is not possible.\nE: Jackson is scheduled to testify on Tuesday and two witnesses are scheduled to testify on Monday.\nThis violates constraint 2, as exactly two witnesses must testify on Tuesday. So this is not possible.\nLooking at the analysis, B, D and E are not possible as they each violate a constraint.\nAction: Answer(\"B\")"
+    }
+]

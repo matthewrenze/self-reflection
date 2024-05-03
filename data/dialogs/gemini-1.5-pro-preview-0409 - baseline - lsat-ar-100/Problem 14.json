@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: At a concert, exactly eight compositions—F, H, L, O, P, R, S, and T—are to be performed exactly once each, consecutively and one composition at a time. The order of their performance must satisfy the following conditions: T is performed either immediately before F or immediately after R. At least two compositions are performed either after F and before R, or after R and before F. O is performed either first or fifth. The eighth composition performed is either L or H. P is performed at some time before S. At least one composition is performed either after O and before S, or after S and before O.\nQuestion: If T is performed fifth and F is performed sixth, then S must be performed either\nChoices:\n  A: fourth or seventh\n  B: third or sixth\n  C: third or fourth\n  D: second or seventh\n  E: first or fourth\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n*  We know T is 5th and F is 6th, so the condition \"T immediately before F or immediately after R\" is satisfied. \n*  This also means at least two compositions are performed after F and before R (since R cannot be before T).\n*  O cannot be 5th (already occupied), so O must be 1st.\n*  The 8th composition is either L or H, leaving the 2nd, 3rd, 4th, and 7th slots open for S.\n*  Since O is 1st, the condition \"at least one composition is performed either after O and before S, or after S and before O\" means S cannot be 2nd (no space before it).\n*  Therefore, S must be performed 3rd, 4th, or 7th. \n*  We also know P is before S, so S cannot be 3rd (P would have to be 1st or 2nd, but those are taken).\nAction: Answer(\"A\") \n"
+    }
+]

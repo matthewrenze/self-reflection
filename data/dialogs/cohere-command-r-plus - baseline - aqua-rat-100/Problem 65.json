@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Math.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Math\nQuestion: I know a 5 digit number having a property that with a 1 after it, it is three times as large as it would be with a 1 before it.\nWhat is that number?\nChoices:\n  A: 42857\n  B: 32456\n  C: 76523\n  D: 24567\n  E: 43566\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nLet the 5-digit number be $abcd$.\nSo, $abcd_1 = 3 \\times 1abcd$, where $1abcd$ is the number with 1 in front of $abcd$.\n$abcd1 = 10000 \\times a + 100 \\times b + 10 \\times c + d$\n$1abcd = 1000 \\times a + 100 \\times b + 10 \\times c + d$\n$abcd1 = 3 \\times (1000 \\times a + 100 \\times b + 10 \\times c + d)$\n$\\Rightarrow 10000a + 100b + 10c + d = 3000a + 300b + 30c + 3d$\n$\\Rightarrow 7000a + 70b + 7d = 0$\n$\\Rightarrow a + b + d = 0$ and $100a + 10b + c = 0$\n$\\Rightarrow a = -b - d$ and $c = -10b - 100a$\nPlugging $a$ and $c$ in terms of $b$ and $d$ in $abcd1 = 3000a + 300b + 30c + 3d$, we get\n$-1000b - 1000d + 100b + 10b + 10 \\times -10b - 1000a + d = 3000 \\times -b - 1000d + 300b + 30 \\times -10b - 3000a + 3d$\nSimplifying, we get $-60b - 6900d = -170b - 6900d$\n$\\Rightarrow b = 0$\nHence, $a = -d$ and $c = 0$\nSo, the number is $abcd = -d00d$\nPlugging in the choices, we get that $-d00d$ is equal to $42857$ for $d = 7$, $24567$ for $d = 5$, and $76523$ for $d = 3$.\nAction: Answer(\"A,D,C\")"
+    }
+]

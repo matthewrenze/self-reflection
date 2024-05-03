@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Logic.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Logic\nContext: A provincial Go team coach selects 4 of the 7 players from E, F, G, H, J, K and M to participate in the professional league.The selection must meet the following conditions? E or F has one person to participate, but not both .One of J or K will participate, but not both.If J participates, then G participates.Unless F participates, M does not participate.\nQuestion: Which two of the following players will be selected by the coach to make the four-person team the only choice?\nChoices:\n  A: F and H\n  C: G and M\n  B: G and J\n  D: H and M\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nAdvice:\n- Always read the question and conditions carefully.\n- Understand the meaning of conditional words like \"unless\".\n- Break down complex problems into simpler parts.\n- Double-check your understanding and your work.\n- Practice logical reasoning problems to improve your skills.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nThe conditions are as follows:\n1. Either E or F, but not both, must participate.\n2. Either J or K, but not both, must participate.\n3. If J participates, then G must participate.\n4. Unless F participates, M does not participate.\nLet's analyze the choices:\nA: F and H - If F participates, E cannot. This leaves us with two more spots. H can be one of them, but the last spot cannot be filled because if we choose J, we must also choose G, and if we choose K, M cannot participate because F is already participating. So, this choice is not possible.\nB: G and J - If G and J participate, E or F can participate, but not both. If E participates, the last spot can be filled by K. If F participates, the last spot cannot be filled by M because F is already participating. So, this choice is possible.\nC: G and M - If G and M participate, F must also participate because M is participating. This leaves us with one more spot. This spot can be filled by either J or K, but not both. If J is chosen, it contradicts the condition that if J participates, then G must participate. So, this choice is not possible.\nD: H and M - If H and M participate, F must also participate because M is participating. This leaves us with one more spot. This spot can be filled by either J or K, but not both. If J is chosen, it contradicts the condition that if J participates, then G must participate. So, this choice is not possible.\nAction: Answer(\"B\")"
+    }
+]

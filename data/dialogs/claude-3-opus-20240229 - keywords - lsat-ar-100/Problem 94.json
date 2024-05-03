@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A shopping center has exactly seven spaces—space 1 through space 7—arranged in a straight row. Seven businesses—an optometrist, a pharmacy, two restaurants, a shoe store, a toy store, and a veterinarian—will be located in the shopping center, one in each space. The locations of the businesses are subject to the following constraints: The pharmacy must be at one end of the row and one of the restaurants at the other. The two restaurants must be separated by at least two other businesses. The pharmacy must be next to either the optometrist or the veterinarian. The toy store cannot be next to the veterinarian.\nQuestion: If the veterinarian is in space 5, which one of the following must be true?\nChoices:\n  A: The optometrist is in space 2.\n  B: The pharmacy is in space 7.\n  C: A restaurant is in space 4.\n  D: The shoe store is in space 6.\n  E: The toy store is in space 3.\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nError Keywords:\n - Logical reasoning error\n - Constraint satisfaction error\n - Spatial reasoning error\n - Incomplete consideration of possibilities\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Okay, let's think through this step-by-step:\n1. The pharmacy must be at one end (space 1 or 7) and a restaurant at the other end. \n2. The veterinarian is in space 5. This means the toy store cannot be in space 4 or 6 (since it can't be next to the vet).\n3. The pharmacy must be next to either the optometrist or veterinarian. Since the vet is in space 5, the pharmacy must be in space 1 (to be at the end and next to the optometrist). This puts the restaurant in space 7.\n4. The two restaurants must be separated by at least two businesses. With one restaurant in space 7, the other restaurant could be in space 1, 2, 3 or 4. But space 1 is taken by the pharmacy. So the second restaurant must be in space 2, 3 or 4.\n5. If the second restaurant was in space 4, then the shoe store, optometrist and toy store would have to fill spaces 2, 3 and 6 (in some order). But then the optometrist wouldn't be next to the pharmacy. So the restaurant can't be in space 4.\n6. Therefore, the second restaurant must be in space 2 or 3. In either case, the shoe store must be in space 6 - it's the only remaining option.\nSo the correct answer is D: The shoe store must be in space 6.\nAction: Answer(\"D\")"
+    }
+]

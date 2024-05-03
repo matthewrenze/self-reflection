@@ -1,0 +1,1207 @@
+id,date_time,model_name,agent_name,exam_name,source,source_id,problem_id,attempt_id,topic,problem,choices,response,solution,agent_answer,correct_answer,score,input_tokens,output_tokens,total_tokens,error
+1,2024-04-29 12:20:09,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,35,1,2,Math,"A rectangular solid, 3 x 4 x 15, is inscribed in a sphere, so that all eight of its vertices are on the sphere. What is the diameter of the sphere?
+Choices:
+  A:  13.3542
+  B:  15.8113
+  C:  18.3451
+  D:  19.5667
+  E:  20.8888
+","Choices:
+  A:  13.3542
+  B:  15.8113
+  C:  18.3451
+  D:  19.5667
+  E:  20.8888
+","Thought:
+The diameter of the sphere is equal to the space diagonal of the rectangular solid.
+The space diagonal of the rectangular solid can be found using the Pythagorean theorem.
+Let x be the space diagonal of the rectangular solid.
+Then, x^2 = 3^2 + 4^2 + 15^2 = 250.
+The diameter of the sphere is equal to x.
+Solving for x, we get x = sqrt(250) = 5*sqrt(10).
+Therefore, the diameter of the sphere is 2x = 10*sqrt(10).
+Action: Answer(""E"")","In an inscribed rectangle in a sphere, we will have a line joining the opposite vertices as the diameter.
+According to the Pythagoras theorem, sides 3, 4 give diagonal as 5 ==> with 5 and 15, we get 5sqrt(10).
+5sqrt(10) or 15.8113 is the diameter of the sphere.
+answer = B",E,B,0,391,126,517,
+3,2024-04-29 12:20:12,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,84,3,2,Math,"A square piece of cloth is trimmed by 4 feet on one edge to form a rectangular piece, which is then cut diagonally in half to create two triangles. If the area of each of triangle is 70 square feet, what was the perimeter (in feet) of the original piece of square cloth?
+Choices:
+  A: 56
+  B: 58
+  C: 60
+  D: 62
+  E: 64
+","Choices:
+  A: 56
+  B: 58
+  C: 60
+  D: 62
+  E: 64
+","Thought:
+Let's assume the original side of the square piece of cloth is x feet.
+After trimming 4 feet from one edge, the new dimensions of the rectangular piece are (x-4) feet and x feet.
+Using the Pythagorean theorem, we can find the length of the diagonal of the rectangular piece:
+diagonal^2 = (x-4)^2 + x^2
+diagonal^2 = 2x^2 - 8x + 16
+diagonal = sqrt(2x^2 - 8x + 16)
+Each triangle has an area of 70 square feet, so the area of the rectangular piece is 140 square feet:
+(x-4)x = 140
+x^2 - 4x - 140 = 0
+(x-14)(x+10) = 0
+x = 14 (since x cannot be negative)
+The perimeter of the original square piece of cloth is 4x = 56 feet.
+Action: Answer(""A"")","Let x be the length of one side of the original square.
+The area of the rectangle is x(x-4)=140.
+x=14.
+The perimeter of the square was 4*14=56 feet.
+The answer is A.",A,A,1,393,209,602,
+4,2024-04-29 12:20:15,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,56,4,2,Math,"Train A leaves a station every 16 minutes and Train B leaves every 17 minutes. If both trains just left the station simultaneously, how long until they do so again?
+Choices:
+  A: 272 minutes
+  B: 304 minutes
+  C: 190 minutes
+  D: 70 minutes
+  E: 35 minutes
+","Choices:
+  A: 272 minutes
+  B: 304 minutes
+  C: 190 minutes
+  D: 70 minutes
+  E: 35 minutes
+","Thought:
+The time it takes for both trains to leave the station simultaneously again is the least common multiple (LCM) of 16 and 17.
+To find the LCM, I can use the prime factorization method.
+16 = 2^4 and 17 is a prime number.
+The LCM is 2^4 * 17 = 272.
+Action: Answer(""A"")","We have to find the LCM:
+17 is a prime number which means the LCM of 16 and 17 has to be 16*17=272
+Correct answer is A.",A,A,1,371,81,452,
+5,2024-04-29 12:20:16,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,34,5,2,Math,"Suppose you can travel from a place M to a place N by 3 buses, from place N to place O by 4 buses, from place O to place P by 1 buses and from place P to place Q by 3 buses. In how many ways can you travel from M to Q ?
+Choices:
+  A: 24
+  B: 36
+  C: 72
+  D: 84
+  E: None
+","Choices:
+  A: 24
+  B: 36
+  C: 72
+  D: 84
+  E: None
+","Thought:
+To find the total number of ways to travel from M to Q, we need to multiply the number of ways to travel from M to N, from N to O, from O to P, and from P to Q.
+The number of ways to travel from one place to another is independent of the number of ways to travel from another place to the same place.
+Therefore, we can multiply the number of ways to travel from each place to the next.
+Action: Answer(""C"")","The bus from M to N can be selected in 3 ways. The bus from N to O can be selected in 4 ways. The bus from O to P can be selected in 1 way. The bus from P to Q can be selected in 3 ways. So, by the General Counting Principle, one can travel from M to Q in 3*4*1*3= 36 ways
+Answer B",C,B,0,392,99,491,
+6,2024-04-29 12:20:18,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,55,6,2,Math,"A company contracts to paint 3 houses. Mr.Brown can paint a house in 6 days while Mr.Black would take 8 days and Mr.Blue 12 days. After 8 days Mr.Brown goes on vacation and Mr. Black begins to work for a period of 6 days. How many days will it take Mr.Blue to complete the contract?
+Choices:
+  A: 7
+  B: 8
+  C: 10
+  D: 11
+  E: 12
+","Choices:
+  A: 7
+  B: 8
+  C: 10
+  D: 11
+  E: 12
+","Thought:
+Let's first calculate the fraction of work done by each person per day.
+Mr.Brown can paint a house in 6 days, so he can paint 1/6 of a house per day.
+Mr.Black can paint a house in 8 days, so he can paint 1/8 of a house per day.
+Mr.Blue can paint a house in 12 days, so he can paint 1/12 of a house per day.
+After 8 days, Mr.Brown has completed 8*(1/6) = 4/3 of the work.
+So, the remaining work is 2/3.
+Mr.Black works for 6 days, so he completes 6*(1/8) = 3/4 of the remaining work.
+The total work done is 4/3 + 3/4 = 13/6.
+The remaining work is 1 - 13/6 = 1/6.
+Mr.Blue can complete 1/12 of the work per day.
+So, he will complete the remaining 1/6 work in 2 days.
+Action: Answer(""B"")","let x is amount of work to be done to paint one house.
+So Brown's one day work is x/6, black's can do x/8 work in
+one day and blue is x/12.
+Total houses is 3, so tatal work to be done is 3x.
+3x= 8*(x/6) + 6*(x/8) + y*(x/12)
+finally y = 11.
+blue will complete the remaining work in 11 days.
+ANSWER:D",B,D,0,404,232,636,
+7,2024-04-29 12:20:21,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,65,7,2,Math,"Amy is organizing her bookshelves and finds that she has 10 different types of books. She then codes each book with either a single letter or a pair of two different letters. If each type of book is uniquely represented by either a single letter or pair of letters, what is the smallest number of letters Amy will need to create the codes for all 10 types of books? (Assume the order of letters in a pair does not matter.)
+Choices:
+  A: 3
+  B: 4
+  C: 5
+  D: 10
+  E: 20
+","Choices:
+  A: 3
+  B: 4
+  C: 5
+  D: 10
+  E: 20
+","Thought:
+If Amy uses a single letter to represent each type of book, she will need 10 letters. 
+If she uses pairs of letters, she can create 10 pairs using the 10 different types of books. 
+The number of ways to choose 2 letters from a set of 26 is 26 choose 2, which is (26*25)/2 = 325. 
+Therefore, Amy needs at least 10 letters or pairs of letters, which is less than 325.
+Action: Answer(""B"")","The question asks for the smallest value of n, such that (n + nC2) = 10 (n represents the number of letters. In this equation, n by itself is for single-letter codes and nC2 is for two-letter codes).
+At this point, you'd need to pick numbers, since there's really no easy way to solve nC2 = (10 – n) without a calculator.
+Looking at the answer choices, you can eliminate 10 and 20, so you can quickly narrow down the values you need to test. (i.e. (10 – n) suggests n can not be less than 10.)
+As a general rule, whenever you're asked for the smallest value that satisfies a condition, start by testing the smallest number in the answers. Conversely, if you're asked for the largest value, start with the greatest answer.
+Plug-in n=4 to (n + nC2) = (4 + 4C2) = 4 + (4x3 /2) = (4 + 6) = 10 ANS:D",B,D,0,422,108,530,
+10,2024-04-29 12:20:23,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,116,10,2,Math,"At its maximum speed, a space shuttle can travel 700m high in 40 seconds. It will also take 5 seconds to pass a point. What then is the length of the space shuttle?
+Choices:
+  A: 50 m
+  B: 75 m
+  C: 100 m
+  D: 125 m
+  E: 150 m
+","Choices:
+  A: 50 m
+  B: 75 m
+  C: 100 m
+  D: 125 m
+  E: 150 m
+","Thought:
+The space shuttle travels 700m in 40 seconds, so its speed is 700/40 = 17.5 m/s.
+In the 5 seconds it takes to pass a point, the shuttle will have traveled 17.5 x 5 = 87.5 m.
+Therefore, the length of the space shuttle is 700 + 87.5 = 787.5 m.
+Action: Answer(""None of the Above"") [The correct answer is not among the choices provided. The correct answer is 787.5 m.]","Let the length of the space shuttle be x metres and its speed be y m/sec. Then, x / y = 1 ⇒ y = x / 5
+∴ (x + 700) / 40 = x / 5 ⇔ x = 100 m. Answer C",N,C,0,377,114,491,
+12,2024-04-29 12:20:25,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,124,12,2,Math,"30 is subtracted from a number, it is reduced to its one third. What is the value of 50% of that number?
+Choices:
+  A: 22.5
+  B: 84
+  C: 21
+  D: 24
+  E: 25
+","Choices:
+  A: 22.5
+  B: 84
+  C: 21
+  D: 24
+  E: 25
+","Solution:
+Let's assume the number is ""x"".
+According to the problem, we can write the following equation:
+x - 30 = (1/3)x
+Multiplying both sides by 3, we get:
+3x - 90 = x
+2x = 90
+x = 45
+Now, we need to find 50% of x:
+(50/100) * 45 = 22.5
+Action: Answer(""A"")","2/3 x = 30 => x = 45
+45 * 1/2 = 22.5
+ANSWER:A",A,A,1,362,96,458,
+15,2024-04-29 12:20:27,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,14,15,2,Math,"Add: +45 and -30
+Choices:
+  A: -30
+  B: +30
+  C: 0
+  D: 15
+  E: -15
+","Choices:
+  A: -30
+  B: +30
+  C: 0
+  D: 15
+  E: -15
+","Thought:
+To add two numbers with different signs, we need to subtract the smaller absolute value from the larger absolute value and keep the sign of the larger number.
+The absolute value of +45 is larger than the absolute value of -30.
+So, we subtract 30 from 45 and keep the sign of +45, which is positive.
+45 - 30 = 15
+Action: Answer(""D"")","45 - 30 = 15
+ANSWER : D",D,D,1,339,83,422,
+17,2024-04-29 12:20:29,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,11,17,2,Math,"A company produces 420 units of a particular computer component every month, at a production cost to the company of $110 per component, and sells all of the components by the end of each month. What is the minimum selling price per component that will guarantee that the yearly profit (revenue from sales minus production costs) will be at least $626,400 ?
+Choices:
+  A: 226
+  B: 230
+  C: 240
+  D: 260
+  E: 280
+","Choices:
+  A: 226
+  B: 230
+  C: 240
+  D: 260
+  E: 280
+","Thought:
+The company produces 420 units of a particular computer component every month, so it produces 420 x 12 = 5040 units per year.
+The production cost to the company of each component is $110, so the total production cost per year is 5040 x $110 = $554,400.
+The yearly profit (revenue from sales minus production costs) should be at least $626,400, so the revenue from sales should be at least $626,400 + $554,400 = $1,180,800.
+The minimum selling price per component that will guarantee that the yearly profit will be at least $626,400 is the selling price that will give the revenue of $1,180,800 when 5040 units are sold.
+Let x be the minimum selling price per component.
+Then, the revenue from sales is x x 5040 = 5040x.
+To guarantee that the yearly profit will be at least $626,400, we need to have 5040x - $554,400 >= $626,400.
+Solving for x, we get x >= ($626,400 + $554,400)/5040 = $240.
+Action: Answer(""C"")","450*12(x-110)=626400
+where x is a selling cost of one item
+x-110, is a profit from one item
+450 - number of items produced and sold per month
+12 - is a number of month in a year
+Simplifying the equation will lead to x-110=116, then x = 230
+B",C,B,0,404,250,654,
+19,2024-04-29 12:20:33,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,29,19,2,Math,"A jeep travels a certain distance taking 6 hours in the forward journey. During the return journey, it increased its speed by 12km/hr and took 4 hours. What is the distance travelled by the jeep?
+Choices:
+  A: 126km
+  B: 144km
+  C: 127km
+  D: 228km
+  E: 128km
+","Choices:
+  A: 126km
+  B: 144km
+  C: 127km
+  D: 228km
+  E: 128km
+","Thought:
+Let's use the formula distance = speed x time.
+Let's assume the speed of the jeep in the forward journey is S.
+Then, the speed of the jeep in the return journey is S + 12 km/hr.
+Let's assume the distance travelled by the jeep is D.
+From the problem, we know that:
+D = S x 6 (distance = speed x time for the forward journey)
+D = (S + 12) x 4 (distance = speed x time for the return journey)
+We can solve for S by equating the two equations above:
+S x 6 = (S + 12) x 4
+6S = 4S + 48
+2S = 48
+S = 24 km/hr
+Substituting S into the first equation:
+D = 24 x 6 = 144 km
+Action: Answer(""B"")","Let 'x' be the distance and 'y' be the speed of the forward journey. Then, we have 6v=d and 4(v+12)=d
+=> v=d/6 and v=d/4 - 12
+=> d/6 = d/4 - 12
+=> d/12 = 12
+=> d=144
+Answer: B",B,B,1,380,184,564,
+20,2024-04-29 12:20:36,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,121,20,2,Math,"64 boys and 40 girls form a group for social work. During their membership drive, the same number of boys and girls joined the group. How many members does the group have now, if the ratio of boys to girls is 4:3?
+Choices:
+  A: 277
+  B: 288
+  C: 200
+  D: 277
+  E: 168
+","Choices:
+  A: 277
+  B: 288
+  C: 200
+  D: 277
+  E: 168
+","Thought:
+The ratio of boys to girls is 4:3, which means there are 4x boys and 3x girls in the group.
+Initially, there were 64 boys and 40 girls, so the total number of members was 64 + 40 = 104.
+Let's assume that x boys and x girls joined the group.
+So, the total number of boys in the group now is 4x + 64, and the total number of girls is 3x + 40.
+The total number of members in the group now is (4x + 64) + (3x + 40) = 7x + 104.
+We need to find the value of x to get the total number of members in the group.
+The ratio of boys to girls is 4:3, so we can write:
+4x/3x = 4/3
+Cross-multiplying, we get:
+4x * 3 = 3x * 4
+12x = 12
+x = 1
+Substituting x = 1 in the expression for the total number of members, we get:
+7x + 104 = 7 + 104 = 111
+Action: Answer(""E"")","Let us say x boys and x girls joined the group.
+(64 + x)/(40 + x) = 4/3
+192 + 3x = 160 + 4x => x = 32
+Number of members in the group = 64 + x + 40 + x
+= 104 + 2x = 168.
+Answer:E",E,E,1,383,258,641,
+22,2024-04-29 12:20:40,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,22,22,2,Math,"Alex and Jacob works at a toy shop that make toys. Alex takes 7 hours to make a toy, and Jacob takes 9 hours to make a toy. During a month, both of them makes 35 toys in total. If both of them have worked for almost similar number of hours how many toys have been prepared by Jacob?
+Choices:
+  A: 15
+  B: 16
+  C: 17
+  D: 18
+  E: 19
+","Choices:
+  A: 15
+  B: 16
+  C: 17
+  D: 18
+  E: 19
+","Thought:
+Let's assume that Alex and Jacob worked for x hours each.
+Alex makes 1/7 toys per hour.
+Jacob makes 1/9 toys per hour.
+Together, they make 35 toys in total.
+So, (1/7 + 1/9) * x = 35
+Solving for x, we get x = 18.9 hours (approx).
+Jacob makes 1/9 toys per hour.
+So, in 18.9 hours, Jacob makes 18.9 * 1/9 = 2.1 toys (approx).
+Action: Answer(""B"")","Lets say Alex has worked for x hrs., and Jacob has worked for y hrs. So, number of toys prepared by Alex is x/7, and Jacob is y/9. Since total number of toys prepared by both of them is 35.
+=> x/7 + y/9 = 35.
+=> 9x + 7y = (35)(63)
+=> 7y = (35)(63) - 9x
+=> y = (5)(63) - (9/7)x
+=> y = 315 - (9/7)x
+=> x is to be a multiple of 7. Also, we need to minimize the difference between x & y. Here are some possible values,
+x = 126, y = 315 - (9/7)126 = 153
+x = 133, y = 315 - (9/7)133 = 144
+x = 140, y = 315 - (9/7)140 = 135
+x = 147, y = 315 - (9/7)147 = 126
+As we can see minimum difference between x and y is when x is 140 hrs. and y is 135 hrs. Thus total toys created by Jacob = y/9 = 135/9 = 15.
+Answer: A",B,A,0,399,125,524,
+27,2024-04-29 12:20:42,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,103,27,2,Math,"M men agree to purchase a gift for Rs. D. If 3 men drop out how much more will each have to contribute towards the purchase of the gift?
+Choices:
+  A: D/(M-3)
+  B: MD/3
+  C: M/(D-3)
+  D: 3D/(M2-3M)
+  E: None of these
+","Choices:
+  A: D/(M-3)
+  B: MD/3
+  C: M/(D-3)
+  D: 3D/(M2-3M)
+  E: None of these
+","Thought:
+Initially, each man would have to contribute D/M rupees.
+If 3 men drop out, then the total number of men becomes M-3.
+So, each man would have to contribute (D/(M-3)) rupees.
+The difference in contribution would be (D/M) - (D/(M-3)) = 3D/(M(M-3)).
+Action: Answer(""D"")","Initial contribution = D/m
+After 3 men drop out, then the contribution = D/M-3
+the extra amount to pay = (D/m-3)-D/m
+=D(m-m+3)/)(m^2-3*m)
+= 3D/(m^2-3*m)
+ANSWER:D",D,D,1,379,85,464,
+28,2024-04-29 12:20:44,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,4,28,2,Math,"If the probability that Stock A will increase in value during the next month is 0.56, and the probability that Stock B will increase in value during the next month is 0.74. What is the greatest value for the probability that neither of these two events will occur?
+Choices:
+  A: 0.22
+  B: 0.26
+  C: 0.37
+  D: 0.46
+  E: 0.63
+","Choices:
+  A: 0.22
+  B: 0.26
+  C: 0.37
+  D: 0.46
+  E: 0.63
+","Thought:
+The greatest value for the probability that neither of these two events will occur is when both events occur, and we subtract that from 1.
+P(neither) = 1 - P(A occurs) - P(B occurs)
+P(A occurs) = 0.56
+P(B occurs) = 0.74
+P(A and B occur) = P(A) * P(B) = 0.56 * 0.74 = 0.4144
+P(neither) = 1 - 0.56 - 0.74 + 0.4144 = 0.2064
+Action: Answer(""A"")","The probability that stock A does not increase is 0.44, and the probability that stock B does not increase is 0.26. Now, how can the probability that both do not increase be more than individual probability of not increasing for each? So the probability that both do not increase can not be more than 0.26. Basically the probability that both do not increase is between 0 and 0.26.",A,B,0,398,134,532,
+29,2024-04-29 12:20:46,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,59,29,2,Math,"There is well of depth 30m and frog is at bottom of the well. He jumps 3m up one day and falls back 2m down the same day. How many days will it take for the frog to come out of the well?
+Choices:
+  A: 25 days
+  B: 26 days
+  C: 27 days
+  D: 28 days
+  E: 29 days
+","Choices:
+  A: 25 days
+  B: 26 days
+  C: 27 days
+  D: 28 days
+  E: 29 days
+","Thought:
+The frog jumps 3m up and falls 2m down, so it gains 1m each day.
+To get out of the well, the frog needs to gain 30m.
+Therefore, it will take the frog 30 days to get out of the well.
+Action: Answer(""None of the Above"") [Correct answer is not listed. The correct answer is 30 days.]","frog jumps 3 m up day & falls back 2 m down at night
+so,frog will be 3-2=1 m up in a day.
+Thus, in 27 days it will be 27 m up
+on 28 th day it will be at top i.e 27+3 = 30 m & will not fall down.
+ANSWER:D",N,D,0,388,82,470,
+30,2024-04-29 12:20:48,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,100,30,2,Math,"Roy was suffering from severe headaches. He went to see his doctor and the doctor gave him 5 tablets asking him to take one tablet every 15 minutes.
+How much time will it take Roy to consume all the 5 tablets?
+Choices:
+  A: 45 Min
+  B: 75 Min
+  C: 90 Min
+  D: 120 Min
+  E: 60 Min
+","Choices:
+  A: 45 Min
+  B: 75 Min
+  C: 90 Min
+  D: 120 Min
+  E: 60 Min
+","Thought:
+Roy has to take 5 tablets, and he takes one tablet every 15 minutes.
+So, he will take 5 x 15 = 75 minutes to consume all the 5 tablets.
+Action: Answer(""B"")","Tablet 1 will be taken in 0 min.
+Tablet 2 will be taken in 15 min.
+Tablet 3 will be taken in 30 min.
+Tablet 4 will be taken in 45 min.
+Tablet 5 will be taken in 60 min.",B,E,0,383,48,431,
+36,2024-04-29 12:20:49,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,58,36,2,Math,"In a chocolate store, all chocolates are either vanilla or cocoa flavored only. 10% of the chocolates are cocoa flavored, 90% of the rest are squashed. What percentage of the chocolates are both vanilla flavored and not squashed?
+Choices:
+  A: 1%
+  B: 2%
+  C: 5%
+  D: 9%
+  E: 10%
+","Choices:
+  A: 1%
+  B: 2%
+  C: 5%
+  D: 9%
+  E: 10%
+","Thought:
+Let's say there are 100 chocolates in total.
+10% of them are cocoa flavored, which means there are 90 vanilla flavored chocolates.
+90% of the vanilla flavored chocolates are squashed, which means only 10% of the vanilla flavored chocolates are not squashed.
+So, the percentage of chocolates that are both vanilla flavored and not squashed is 10% of 90, which is 9.
+Action: Answer(""D"")","If 10% of chocolates are cocoa flavored, then 90% are vanilla flavored.
+90% of 90% are squashed, i.e. 81% are squashed.
+Vanilla flavored and non squashed= 90-81= 9%
+D is the answer",D,D,1,380,92,472,
+37,2024-04-29 12:20:51,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,64,37,2,Math,"In IPL season, Sachin current batting average is 51. In the finals, he scores 78 runs, then is batting average will be 54. Find out the total number of matches played by Sachin in this season.
+Choices:
+  A: 6
+  B: 8
+  C: 9
+  D: 10
+  E: 11
+","Choices:
+  A: 6
+  B: 8
+  C: 9
+  D: 10
+  E: 11
+","Thought:
+Let's assume Sachin played 'x' matches in the season.
+So, the total runs he scored in the season = 51x.
+After playing the final match, the total runs he scored in the season = 51x + 78.
+According to the question, his new batting average is 54.
+So, 54 = (51x + 78) / (x + 1)
+Solving the above equation, we get x = 9.
+Action: Answer(""C"")","Let total number of matches = x
+then, total runs 54*x
+total runs before final = 51*(x-1)
+runs in the final match
+54*x - 51*(x-1) = 78
+x= 9
+ANSWER:C",C,C,1,378,104,482,
+38,2024-04-29 12:20:53,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,57,38,2,Math,"A hollow cube of size 5cm is taken, with the thickness of 1cm. It is made of smaller cubes of size 1cm .If the outer surface of the cube is painted how many faces of the smaller cubes remain unpainted?
+Choices:
+  A: 438
+  B: 550
+  C: 500
+  D: 450
+  E: 498
+","Choices:
+  A: 438
+  B: 550
+  C: 500
+  D: 450
+  E: 498
+","Thought:
+The outer surface of the cube is of size 5x5x1 = 25 cm^2.
+The inner surface of the hollow cube is of size 3x3x1 = 9 cm^2.
+So, the total surface area of the smaller cubes is 25 - 9 = 16 cm^2.
+The number of smaller cubes that have unpainted faces is equal to the number of cubes that are not on the surface of the larger cube.
+There are 3x3x3 = 27 smaller cubes on each face of the larger cube.
+There are 6 faces in total, so there are 6x27 = 162 smaller cubes on the surface of the larger cube.
+The total number of smaller cubes is 5x5x5 = 125.
+Therefore, the number of smaller cubes that have unpainted faces is 125 - 162 = -37, which is not possible.
+Action: Answer(""None of the Above"")","Volume of Big Cube considering it is not hollow = L3 = 5*5*5 = 125 cm3
+Size of hollow cube (considering 1 cm thickness on two faces of large cube = 5 - 2 = 3cm
+Volume of hollow cube = 3*3*3 = 27 cm3
+So Total Volume filled up by smaller cubes = Volume of Larger Cube - Volume of hollow cube
+= 125 - 27
+= 98 cm3
+Volume of 1 small cube = 1*1*1 = 1 cm3
+Total number of small cubes in the larger cube = 98 / 1 = 98
+and Number of faces of 98 small cubes (6 faces each cube has) = 98*6 = 588 faces
+Total Surface area of 6 faces of larger cube painted = 6*L2 = 6*5*5 = 150cm2
+Surface area of one face of small cube = 1*1 = 1cm2
+Number of faces of small cube painted = 150/1 = 150 faces
+Hence number of faces of the smaller cubes remain unpainted= 588-150
+= 438
+answer.A",N,A,0,382,200,582,
+41,2024-04-29 12:20:57,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,96,41,2,Math,"A number of friends decided to go on a picnic and planned to spend Rs. 96 on eatables. Four of them, however, did not turn up. As a consequence, the remaining ones had to contribute Rs. 4 extra, each. The number of those who attended the picnic was
+Choices:
+  A: 8
+  B: 12
+  C: 16
+  D: 24
+  E: 25
+","Choices:
+  A: 8
+  B: 12
+  C: 16
+  D: 24
+  E: 25
+","Let the total number of friends be x. 
+The cost of eatables per person if all x friends contribute is 96/x. 
+Since 4 friends did not turn up, the remaining friends had to contribute 4 extra each. 
+So, the cost of eatables per person increased to 96/(x-4) + 4. 
+We can set up an equation: 96/x = 96/(x-4) + 4. 
+Solving for x, we get x = 16. 
+Action: Answer(""C"")","Let the number of persons be x. Then,
+96/x-4-96/x=4 => x=12
+So, required number =x-4=8.
+Answer is A",C,A,0,392,114,506,
+50,2024-04-29 12:20:59,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,76,50,2,Math,"A ship went on a voyage. After it had traveled 180 miles a plane started with 10 times the speed of the ship. Find the distance when they meet from starting point.
+Choices:
+  A: 238
+  B: 289
+  C: 200
+  D: 287
+  E: 187
+","Choices:
+  A: 238
+  B: 289
+  C: 200
+  D: 287
+  E: 187
+","Thought:
+Let's assume the speed of the ship is x.
+The speed of the plane is 10x.
+Let's assume they meet after t hours.
+The distance traveled by the ship = x * t
+The distance traveled by the plane = 10x * t
+The total distance traveled by both is 180 miles.
+Therefore, x * t + 10x * t = 180
+Simplifying the equation, we get t = 12.
+The distance traveled by the ship = x * t = x * 12
+The distance traveled by the plane = 10x * t = 10x * 12
+The total distance from the starting point = x * 12 + 10x * 12 = 132x
+Action: Answer(""C"")","Let the speed of the ship = m miles/hr. and plane took 't' hours to meet the ship
+Then, m×t is the distance ship traveled after plane started
+So we have, mt + 180 = 10mt
+⇒ 9mt = 180
+⇒ mt = 20
+Hence distance = 180 + 20 = 200 miles
+Answer:C",C,C,1,368,161,529,
+56,2024-04-29 12:21:01,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,49,56,2,Math,"A man borrows Rs.360 If he pays it back in 12 monthly installments of Rs.31.50, what is his interest rate?
+Choices:
+  A: 1.5%
+  B: 4.5%
+  C: 10%
+  D: 5%
+  E: 12%
+","Choices:
+  A: 1.5%
+  B: 4.5%
+  C: 10%
+  D: 5%
+  E: 12%
+","Thought:
+The total amount paid back is 12 x 31.50 = Rs. 378.
+The interest is the difference between the total amount paid back and the amount borrowed.
+Interest = 378 - 360 = Rs. 18.
+The interest rate is the interest divided by the amount borrowed, multiplied by 100.
+Interest rate = (18/360) x 100 = 5%.
+Action: Answer(""D"")","Instead of paying monthly 360/12 = 30Rs, the man pays 31.50Rs. Therefore, the interest rate is 1.5/30 = 0.5/10 = 5/100 = 5%.
+Answer D",D,D,1,366,89,455,
+57,2024-04-29 12:21:03,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,114,57,2,Math,"A point on the edge of a fan blade that is rotating in a plane 10 centimeters from the center of the fan. What is the distance traveled, in centimeters, by this point after 30 seconds when the fan runs at the rate of 300 revolutions per minutes?
+Choices:
+  A: 750pi
+  B: 1500pi
+  C: 1875pi
+  D: 3000pi
+  E: 7500pi
+","Choices:
+  A: 750pi
+  B: 1500pi
+  C: 1875pi
+  D: 3000pi
+  E: 7500pi
+","Thought:
+The distance traveled by the point on the edge of the fan blade is equal to the circumference of the circle with a radius of 10 centimeters multiplied by the number of revolutions made by the fan blade in 30 seconds.
+The circumference of the circle is 2*pi*r = 20*pi centimeters.
+The number of revolutions made by the fan blade in 30 seconds is 300/60*30 = 150 revolutions.
+Therefore, the distance traveled by the point on the edge of the fan blade is 20*pi*150 = 3000*pi centimeters.
+Action: Answer(""D"")","60 seconds - 300 revolutions
+30 seconds - 150 revolutions
+distance travelled in 1 revolution = 2*pi*r
+distance travelled in 150 revolutions = 300*pi*r
+= 3000pi
+Answer is D.",D,D,1,397,124,521,
+59,2024-04-29 12:21:06,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,6,59,2,Math,"20 marbles were pulled out of a bag of only white marbles, painted black, and then put back in. Then, another 20 marbles were pulled out, of which 1 was black, after which they were all returned to the bag. If the percentage of black marbles pulled out the second time represents their percentage in the bag, how many marbles in total Q does the bag currently hold?
+Choices:
+  A: 40
+  B: 200
+  C: 380
+  D: 400
+  E: 3200
+","Choices:
+  A: 40
+  B: 200
+  C: 380
+  D: 400
+  E: 3200
+","Thought:
+The percentage of black marbles pulled out the second time represents their percentage in the bag. 
+If only one black marble was pulled out of 20, then the percentage of black marbles in the bag is 5%.
+Let's assume that the bag initially had Q white marbles.
+Then, 20 marbles were added to the bag, making the total number of marbles in the bag 20 + Q.
+Since all the marbles were returned to the bag, the number of black marbles in the bag increased by 1.
+Thus, 0.05 = 1 / (20 + Q).
+Solving for Q, we get Q = 399.
+Action: Answer(""D"")","We know that there are 20 black marbles in the bag and this number represent 1/20 th of the number of all marbles in the bag, thus there are total Q of 20*20=400 marbles.
+Answer: D.",D,D,1,417,146,563,
+60,2024-04-29 12:21:08,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,110,60,2,Math,"Points A, B, C, D lie in this order on the circumference of a circle. Minor arc AC is 160°, and minor arc BD is 150°. If B bisects minor arc AC, then what is the measure of minor arc AD?
+Choices:
+  A: 80°
+  B: 130°
+  C: 140°
+  D: 160°
+  E: 220°
+","Choices:
+  A: 80°
+  B: 130°
+  C: 140°
+  D: 160°
+  E: 220°
+","Thought:
+Since B bisects minor arc AC, then the measure of minor arc AB is equal to the measure of minor arc BC. 
+The sum of the measures of minor arcs AB, BC, CD, and DA is equal to 360°.
+We know that minor arc AC is 160° and minor arc BD is 150°.
+We can use this information to find the measure of minor arc AB and minor arc BC.
+Then, we can use the fact that minor arc AB is congruent to minor arc BC to find the measure of each of these arcs.
+Finally, we can use the sum of the measures of minor arcs AB, BC, CD, and DA to find the measure of minor arc AD.
+Action: Answer(""A"")","B bisects minor arc AC means Arc BC is 80 degrees. Now , we have arc BD = 150, therefore CD = 70.
+Now, Arc AC = 160 , CD = 70 => Arc AD = 360-230 = 130
+Answer B",A,B,0,391,153,544,
+61,2024-04-29 12:21:11,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,123,61,2,Math,"Kevin drove from A to B at a constant speed of 70 mph. Once he reached B, he turned right around with pause, and returned to A at a constant speed of 90 mph. Exactly 3 hours before the end of his trip, he was still approaching B, only 70 miles away from it. What is the distance between A and B?
+Choices:
+  A: 180
+  B: 90
+  C: 270
+  D: 360
+  E: None of the above
+","Choices:
+  A: 180
+  B: 90
+  C: 270
+  D: 360
+  E: None of the above
+","Thought:
+Let's call the distance between A and B ""d"".
+We know that Kevin drove at a constant speed of 70 mph from A to B, and then at a constant speed of 90 mph from B to A.
+Let's call the time it took Kevin to drive from A to B ""t1"", and the time it took him to drive from B to A ""t2"".
+We know that t1 + t2 = [REDACTED] (since we know the total time of the trip).
+We also know that 70 miles away from B, Kevin had 3 hours left in his trip. Let's call the time it took Kevin to get from B to the point 70 miles away from B ""t3"". We can use the formula distance = rate x time to find t3.
+70 = 90 x t3
+t3 = 7/9 hours
+We can use t3 to find t2.
+t2 = [REDACTED]
+We can use t1 and t2 to find d.
+d = [REDACTED]
+Action: Answer(""D"")","In the last 70 miles of his approach to B, Kevin was traveling at 70 mph, so he traveled that distance in 1 hr, or 60 minutes. That means, when he arrived at B, 60 minutes had elapsed, and he took (3 hr) – (1 hr) = 2 hr to drive the distance D at 90 mph.
+D = RT = (90 mph)[ (2 hr] = 180 mi
+Answer = (A)",D,A,0,407,230,637,
+63,2024-04-29 12:21:14,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,113,63,2,Math,"During one season, a tennis team won 20 matches and lost 30% of their matches. What was the number of matches that the team lost?
+Choices:
+  A: 70
+  B: 30
+  C: 3
+  D: 7
+  E: 5
+","Choices:
+  A: 70
+  B: 30
+  C: 3
+  D: 7
+  E: 5
+","Thought:
+If the team lost 30% of their matches, then they won 70% of their matches.
+To find the number of matches lost, we need to calculate 30% of the total number of matches played.
+Action: Answer(""E"")","Knowing that the team lost 30 % of their matches, it has won 70 % of their matches
+Total matches = 20 / (70/ 100) = 14
+Hence number of matches that the team lost = 20 x 14/100 = 3=C",E,C,0,362,52,414,
+65,2024-04-29 12:21:16,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,44,65,2,Math,"I know a 5 digit number having a property that with a 1 after it, it is three times as large as it would be with a 1 before it.
+What is that number?
+Choices:
+  A: 42857
+  B: 32456
+  C: 76523
+  D: 24567
+  E: 43566
+","Choices:
+  A: 42857
+  B: 32456
+  C: 76523
+  D: 24567
+  E: 43566
+","Thought:
+Let's assume the 5 digit number is abcde.
+According to the problem, 1abcde * 3 = abcde1.
+So, 3 * (10000a + 1000b + 100c + 10d + e) = 10000a + 1000b + 100c + 10d + e + 100000.
+Simplifying the equation, we get 29999a = 99999.
+Therefore, a = 3.
+Hence, the number is 3bcde1.
+Let's try each option to see which one satisfies the condition.
+Option A: 34285 * 3 = 102855, which is not equal to 28543.
+Option B: 32456 * 3 = 97368, which is equal to 45632.
+Therefore, the answer is 32456.
+Action: Answer(""B"")","Let the number be x
+10x +1 = 3(100,000 + x)
+=> x = 42857.",B,A,0,376,190,566,
+67,2024-04-29 12:21:19,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,70,67,2,Math,"Six pita breads contain the same amount of falafel as do two rolls. Three rolls contain the same amount of falafel as five baguettes do. Two baguettes contain the same amount of falafel as how many pita breads?
+Choices:
+  A: 12/25
+  B: 3/2
+  C: 3
+  D: 2
+  E: 25/3
+","Choices:
+  A: 12/25
+  B: 3/2
+  C: 3
+  D: 2
+  E: 25/3
+","Thought:
+Let's start with the baguettes and use the information given to find the number of falafels in two baguettes. 
+Two baguettes = 5 falafels
+Three rolls = 5 falafels
+Two rolls = 6 pita breads
+So, 6 pita breads = 3 rolls = 5 falafels
+Therefore, 2 baguettes = (5 falafels/3 rolls) * (6 pita breads/5 falafels) * 2 baguettes = 24/15 = 8/5
+Action: Answer(""B"")","6P = 2R
+3R = 5B
+2B = ?P
+Thus, P : R : B = 18 : 6 : 12
+P : B = 18 : 12
+= 3 : 2
+Thus P = 3
+Answer : C",B,C,0,392,132,524,
+68,2024-04-29 12:21:21,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,83,68,2,Math,"The greatest common factor of two positive integers is 11. The least common multiple of these two integers is 7700. If one of the integers is 350, what is the other?
+Choices:
+  A: 242
+  B: 308
+  C: 352
+  D: 412
+  E: 456
+","Choices:
+  A: 242
+  B: 308
+  C: 352
+  D: 412
+  E: 456
+","Thought:
+The prime factorization of 7700 is 2^2 * 5^2 * 7 * 11.
+The prime factorization of 350 is 2 * 5^2 * 7.
+The greatest common factor of the two integers is 11, which means that the other integer must have a factor of 11 that 350 does not have.
+The prime factorization of the other integer must be of the form 2^a * 5^b * 7^c * 11, where a ≤ 2, b ≤ 2, and c ≤ 1.
+The least common multiple of the two integers is 7700, which means that the other integer must have a factor of 2^2, a factor of 5^2, a factor of 7, and a factor of 11 that 350 does not have.
+The prime factorization of the other integer is 2^2 * 5^2 * 7 * 11 = 7700.
+Action: Answer(""7700"")","GCF*LCM = product of 2 numbers
+11*7700 = product of 2 numbers
+other number = 11*7700/350 = 242
+Answer is A",7,A,0,370,218,588,
+69,2024-04-29 12:21:25,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,94,69,2,Math,"A bookshelf contains 45 books, 30 of which are hardcover and 20 of which are fiction. What is the maximum number of books that are both hardcover and fiction?
+Choices:
+  A: 10
+  B: 15
+  C: 18
+  D: 20
+  E: 30
+","Choices:
+  A: 10
+  B: 15
+  C: 18
+  D: 20
+  E: 30
+","Thought:
+The maximum number of books that are both hardcover and fiction would be the minimum of the number of hardcover and fiction books.
+There are 30 hardcover books and 20 fiction books.
+Therefore, the maximum number of books that are both hardcover and fiction is 20.
+Action: Answer(""D"")","Total Books = 45
+Hard Cover = 30
+Non hardcover = 15
+Fiction = 20
+Non-Fiction = 25
+Maximum number of Hardcover fiction will be 20( Assuming All the Fiction Books are Hard Cover )
+Hence, the correct answer will be (D)",D,D,1,369,65,434,
+70,2024-04-29 12:21:27,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,78,70,2,Math,"In a railway station, there are two trains going. One in the harbor line and one in the main line, each having a frequency of 10 minutes. The main line service starts at 5 o'clock and the harbor line starts at 5.02 A.M. A man goes to the station every day to catch the first train that comes. What is the probability of the man catching the first train?
+Choices:
+  A: 0.9
+  B: 0.8
+  C: 0.6
+  D: 0.65
+  E: 1.5
+","Choices:
+  A: 0.9
+  B: 0.8
+  C: 0.6
+  D: 0.65
+  E: 1.5
+","Thought:
+The first train that comes can be either from the harbor line or the main line.
+The main line train starts at 5:00 AM and the harbor line train starts at 5:02 AM.
+The probability of the man catching the first train depends on which train arrives first.
+The probability of the man catching the first train is the probability of the main line train arriving first plus the probability of the harbor line train arriving first.
+The probability of the main line train arriving first is 0.5 because it can arrive in the first 10 minutes or the second 10 minutes.
+The probability of the harbor line train arriving first is 0.3 because it can arrive in the third 10 minutes, the fourth 10 minutes, or the fifth 10 minutes.
+The total probability is 0.5 + 0.3 = 0.8.
+Action: Answer(""B"")","For each 10 min interval, if man comes in first 2 min, he'll catch the 1st train, if he comes in next 8 min, he'll catch the 2nd train.
+Hence, for harbor line = (2/10) = 0.2 and for main line 0.8.
+Answer:B",B,B,1,424,183,607,
+73,2024-04-29 12:21:30,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,87,73,2,Math,"there are more than 501 students in a school such that 20% of them exactly took physics and 28% of them exactly took math. What could be the least possible no of students in the school?
+Choices:
+  A: 550
+  B: 570
+  C: 600
+  D: 700
+  E: none of these
+","Choices:
+  A: 550
+  B: 570
+  C: 600
+  D: 700
+  E: none of these
+","Thought:
+Let's assume that the least possible number of students in the school is x.
+Then, 20% of x took physics and 28% of x took math.
+We know that the total number of students is more than 501.
+So, we can write an inequality: x > 501.
+To find the least possible value of x, we need to find the smallest integer that satisfies both conditions.
+Action: Answer(""D"")","20% means 1/5 and 28% means 7/25,taking the lcm of the denominators 5 and 25 we get 25,the least multiple of 25 which is greater than 501 is 525. So, answer is none
+ANSWER:E",D,E,0,375,90,465,
+77,2024-04-29 12:21:32,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,60,77,2,Math,"The sum of the 5 consecutive two digit odd numbers when divided by 10 becomes a perfect square, which of the following can be one of these 5 numbers?
+Choices:
+  A: 47
+  B: 91
+  C: 41
+  D: 67
+  E: 44
+","Choices:
+  A: 47
+  B: 91
+  C: 41
+  D: 67
+  E: 44
+","Thought:
+Let's start by listing the first five consecutive odd numbers:  1, 3, 5, 7, 9.
+We can see that the sum of these numbers is 25, which is a perfect square.
+Let's try to generalize this pattern for any five consecutive odd numbers.
+Let's assume that the first odd number is n. Then the five consecutive odd numbers are n, n+2, n+4, n+6, and n+8.
+The sum of these numbers is 5n+20, which can be simplified to 5(n+4).
+Since the sum is divisible by 10, we know that n+4 must be divisible by 2.
+Therefore, n must be an odd number that is 2 less than a multiple of 4.
+Let's check each answer choice to see which one satisfies this condition:
+A: 47 is not an odd number that is 2 less than a multiple of 4.
+B: 91 is not an odd number that is 2 less than a multiple of 4.
+C: 41 is an odd number that is 2 less than a multiple of 4. Let's check if it works.
+If n=41, then the five consecutive odd numbers are 41, 43, 45, 47, and 49.
+Their sum is 225, which is 22 squared.
+Therefore, C is a possible answer.
+D: 67 is not an odd number that is 2 less than a multiple of 4.
+E: 44 is not an odd number.
+Action: Answer(""C"")","perfect square:- 1,4,9,16,25,36
+sum=square*10=10,40,90,160,250,360
+sum of 4 odd consecutive numbers is multiple of 4
+so the only number left are 40,160,360
+sum/4=40/4=10 is not possible
+sum/4=360/4=90 is not possible
+sum/4=160/4=40 is the only option available i.e 41
+ANSWER:C",C,C,1,365,333,698,
+82,2024-04-29 12:21:35,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,89,82,2,Math,"A cow is tethered in the middle of a field with a 14 feet long rope. If the cow grazes 10 sq.ft. per day, then approximately what time will be taken by the cow to graze the whole field?
+Choices:
+  A: 51 days
+  B: 61 days
+  C: 71 days
+  D: 81 days
+  E: 91 days
+","Choices:
+  A: 51 days
+  B: 61 days
+  C: 71 days
+  D: 81 days
+  E: 91 days
+","Thought:
+The cow can graze in a circular area with a radius of 14 feet.
+The area of a circle is A = πr^2.
+So, the area of the field is A = π(14)^2 = 616π sq.ft.
+The cow grazes 10 sq.ft. per day, so it will take the cow 616π/10 = 61.6π days to graze the whole field.
+Approximately, it will take the cow 61.6π ≈ 193.6 days to graze the whole field.
+Action: Answer(""None of the Above"") [The correct answer is not provided in the choices. The closest answer is B: 61 days, but it is not accurate.]","Area of the field grazed = [22/7*14*14]sq.ft. = 616 sq.ft.
+Number of days taken to graze the field = 616/10 days
+=> 61 days
+ANSWER:B",N,B,0,385,154,539,
+84,2024-04-29 12:21:39,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,91,84,2,Math,"In how many ways can a teacher in a kindergarten school arrange a group of 3 children (Susan, Tim and Zen) on 3 identical chairs in a straight line so that Susan is on the left of Tim?
+Choices:
+  A: 7
+  B: 3
+  C: 2
+  D: 1
+  E: 6
+","Choices:
+  A: 7
+  B: 3
+  C: 2
+  D: 1
+  E: 6
+","Thought:
+Since Susan must be on the left of Tim, there are only two possible arrangements: Susan-Tim-Zen or Tim-Susan-Zen. Since the chairs are identical, there is only one way to arrange the children on each of the two possible arrangements. Therefore, there are only two ways to arrange the children on the chairs.
+Action: Answer(""C"")","Total ways in which 3 children can be arranged on 3 chairs = 3*2*1 = 6
+But in half cases Susan will be left of Tim and in other half of cases Tim will be on left of Susan
+i.e. Desired cases in which Susan is on the left of Tim = (1/2)*6 = 3
+B",C,B,0,375,75,450,
+85,2024-04-29 12:21:40,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,17,85,2,Math,"Consider there is an staircase elevator and you are coming down. If you walk 20 steps and stop, then you reach bottom in 10 minutes. If you walk 10 steps and stop, you reach to the ground in 20 minutes. What is the speed of the elevator?
+Choices:
+  A: 1 step/minute
+  B: 2 step/minute
+  C: 3 step/minute
+  D: 4 step/minute
+  E: None of the above
+","Choices:
+  A: 1 step/minute
+  B: 2 step/minute
+  C: 3 step/minute
+  D: 4 step/minute
+  E: None of the above
+","Thought:
+Let's assume the speed of the elevator is ""x"" steps/minute.
+From the first statement, we can write the equation: 20/(x-10) = 10
+From the second statement, we can write the equation: 10/(x+10) = 20
+Solving these equations, we get x = 3 steps/minute.
+Action: Answer(""C"")","Let total number of steps in the elevator be n and let the speed be e
+Elevator covered n-20 steps in 10 mins
+(n-20)/e=10.................1
+Elevator covered n-10 steps in 20 mins
+(n-10)/e=20......................2
+From (1) and (2)
+n=30
+e=1 step/min
+Hence (A) is correct answer.",C,A,0,402,83,485,
+88,2024-04-29 12:21:42,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,8,88,2,Math,"A train running at a speed of 100 miles/hour, takes 10 hours to reach its destination. After covering quarter of the distance, it starts raining and the train has to be slowed to speed of 75 miles/hour. What is the total journey duration?
+Choices:
+  A: 10
+  B: 11.5
+  C: 12.5
+  D: 13.5
+  E: 15
+","Choices:
+  A: 10
+  B: 11.5
+  C: 12.5
+  D: 13.5
+  E: 15
+","Thought:
+Let's first calculate the total distance of the journey. 
+Let's call the total distance ""d"".
+The train travels at 100 miles/hour for 10 hours, so it covers a distance of 100*10 = 1000 miles.
+Let's call the distance covered before it starts raining ""x"".
+So, x = d/4 (since it covers a quarter of the distance before it starts raining).
+The remaining distance after it starts raining is 3/4 of the total distance, so the distance remaining is 3d/4.
+The train travels at 75 miles/hour for the remaining distance.
+Let's call the time it takes to cover the remaining distance ""t"".
+So, 3d/4 = 75t.
+Solving for ""t"", we get t = (3/4)d/75 = d/100.
+The total time taken is the sum of the time taken to cover the distance before it starts raining and the time taken to cover the remaining distance.
+The time taken to cover the distance before it starts raining is x/100, since the train is traveling at 100 miles/hour.
+So, the total time taken is (d/4)/100 + d/100 = 5d/400 = d/80.
+We know that d = 1000 + x, so substituting this value, we get d/80 = (1000 + x)/80 = 12.5 + x/80.
+We already know that x = d/4, so substituting this value, we get d/80 = 12.5 + (d/4)/80 = 12.5 + d/320.
+Solving for ""d"", we get d = 4000/3.
+The total journey duration is the time taken to cover this distance at a speed of 100 miles/hour for the first quarter of the journey, and at a speed of 75 miles/hour for the remaining distance.
+The time taken is d/4*100 + 3d/4*75 = 1000/3 + 2250 = 3250/3.
+Action: Answer(""B"")","Distance to destination = 100 X 10 = 1000 miles.
+Distance remaining when it starts to rain = 1000 - 250 = 750 miles.
+Speed for remaining distance = 75 miles / hour.
+Time taken to cover remaining distance = 750 / 75 = 10 hours.
+Total duration of the journey = 2.5 + 10 = 12.5 hours.
+The correct option is C.",B,C,0,392,446,838,
+89,2024-04-29 12:21:48,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,63,89,2,Math,"Calculate the maximum distance you can travel with $8.50 on a cab which charges $3.50 for the first quarter-mile and 10 cents for each additional quarter mile.
+Choices:
+  A: 11.75 miles
+  B: 12.75 miles
+  C: 17.75 miles
+  D: 14.75 miles
+  E: 10.75 miles
+","Choices:
+  A: 11.75 miles
+  B: 12.75 miles
+  C: 17.75 miles
+  D: 14.75 miles
+  E: 10.75 miles
+","Thought:
+The cab charges $3.50 for the first quarter-mile, which means that the remaining distance to be covered is 8.5 - 3.5 = $5.00.
+The cab charges 10 cents for each additional quarter mile, which means that for $5.00, the cab can travel 50 quarter-miles.
+Therefore, the maximum distance that can be traveled is 0.25 + 0.25 + 0.25 + ... (50 times) = 12.5 miles.
+Action: Answer(""B"")","Subtract the fee for te first quarter mile $8.50 - $3.50 = $5
+Calculate how many extra additional quarter miles---$5/10 cents => 50 quarter miles => 12.5 miles
+Total distance is 12.5 miles + 1/4 (first quarter mile)
+12.75 miles
+Answer: B",B,B,1,382,114,496,
+91,2024-04-29 12:21:50,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,36,91,2,Math,"A starts travel towards south 3km, then travel 5 km towards east, and again travels 3 km to north, and finally travels 2km towards west. In the end how far from is A from home?
+Choices:
+  A: 3km
+  B: 2km
+  C: 4km
+  D: 5km
+  E: 6km
+","Choices:
+  A: 3km
+  B: 2km
+  C: 4km
+  D: 5km
+  E: 6km
+","Thought:
+We can use Pythagoras theorem to find the distance between the starting point and the final point.
+The distance travelled towards the north and south will cancel each other out, and the distance travelled towards the east and west will cancel each other out.
+So, the distance between the starting point and the final point will be the hypotenuse of the right-angled triangle formed by the remaining distances.
+The distance towards the east is greater than the distance towards the west, so the final point will be 2 km towards the east from the starting point.
+The remaining distances are 3 km towards the south and 3 km towards the north, which cancel each other out.
+So, the remaining distance is the distance between the starting point and the final point, which is the hypotenuse of a right-angled triangle with sides 2 km and 5 km.
+Using Pythagoras theorem, the distance between the starting point and the final point is sqrt(2^2 + 5^2) = sqrt(29) km.
+Action: Answer(""E"")","3s,5e,3n,2w
+5-2=3e
+3-3=0
+3km
+ANSWER:A",E,A,0,382,216,598,
+93,2024-04-29 12:21:54,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,20,93,2,Math,"[5 + ? × 19 - 15 - 7]/[13 × 13 - 156] = 6
+Choices:
+  A: 4
+  B: 4.5
+  C: 5
+  D: 5.5
+  E: 6.5
+","Choices:
+  A: 4
+  B: 4.5
+  C: 5
+  D: 5.5
+  E: 6.5
+","Thought:
+First, we need to simplify the expression inside the brackets.
+[5 + ? × 19 - 15 - 7] = [? × 19 - 17]
+Then, we can substitute this expression into the original equation.
+[? × 19 - 17] / [169 - 156] = 6
+[? × 19 - 17] / 13 = 6
+[? × 19 - 17] = 78
+[? × 19] = 95
+? = 5
+Action: Answer(""C"")","(? × 19 - 17)/(169 - 156) = 6
+=> ? × 19 - 17 = 13 × 6 = 76
+=> ? × 19 = 78 + 17 = 95
+? = 95/19 = 5
+Answer: Option C",C,C,1,364,120,484,
+95,2024-04-29 12:21:56,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,23,95,2,Math,"John likes to have lightly flavored tea every evening. In a 50% strong milk tea, he replaces 15% of it with milk twice. Then, he replaces 10 percent of the resultant solution with more milk.
+What is the final concentration of tea John drinks?
+Choices:
+  A: 15.38%
+  B: 42%
+  C: 39.86%
+  D: 22.35%
+  E: 32.51%
+","Choices:
+  A: 15.38%
+  B: 42%
+  C: 39.86%
+  D: 22.35%
+  E: 32.51%
+","Thought:
+Let's assume John has 100 ml of 50% strong milk tea.
+After replacing 15% of it with milk twice, the concentration of tea in the solution becomes 50% * 0.85 * 0.85 = 30.13%.
+Then, after replacing 10% of the resultant solution with more milk, the concentration of tea in the solution becomes 30.13% * 0.9 = 27.12%.
+Action: Answer(""A"")","Imagine starting out with 100 ml of 50% milk tea.
+In step 1, 15% of the tea is replaced with milk. Thus, 85% of the original tea remains. Since this is done twice, we have a concentration of 50x0.85x0.85% (=36.125%) of tea solution.
+Finally, 10% of this solution is replaced with milk again. So, the final concentration of tea is 36.125*0.9%
+This equals 32.51% of tea solution.
+Answer: E",A,E,0,394,103,497,
+96,2024-04-29 12:21:58,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,117,96,2,Math,"A starts a business with Rs.40,000. After 2 months, B joined him with Rs.60,000. C joined them after some more time with Rs.120,000. At the end of the year, out of a total profit of Rs.375,000, C gets Rs.150,000 as his share. How many months after B joined the business, did C join?
+Choices:
+  A: 2 months
+  B: 4 months
+  C: 23 months
+  D: 24 months
+  E: 84 months
+","Choices:
+  A: 2 months
+  B: 4 months
+  C: 23 months
+  D: 24 months
+  E: 84 months
+","Let's start by finding the ratio of profit sharing between A, B, and C. 
+Total investment = Rs. 40,000 (A) + Rs. 60,000 (B) + Rs. 120,000 (C) = Rs. 220,000
+Ratio of profit sharing = (A's investment * time) : (B's investment * time) : (C's investment * time)
+Let's assume C joined after t months.
+Then, the ratio of profit sharing = (40000*12) : (60000*(12-2-t)) : (120000*(12-t))
+150000/375000 = (40000*12) : (60000*(12-2-t)) : (120000*(12-t))
+Simplifying this equation, we get t = 4 months.
+Therefore, C joined the business 4 months after B joined.
+Action: Answer(""B"")","Assume that C was there in the business for x months
+A:B:C = 40000*12 : 60000*10 : 120000*x
+= 40*12 : 60*10 : 120x = 40 : 5*10 : 10x
+=8 : 10 : 2x
+= 4 : 5 : x
+C's share = 375000*x/(9+x) = 150000
+=> 375x/(9+x) = 150
+=> 15x = 6(9+x)
+=> 5x = 18 + 2x
+=> 3x = 18
+=> x = 18/3 = 6
+It means C was there in the business for 6 months. Given that B joined the business
+after 2 months. Hence C joined after 4 months after B joined
+Answer is B",B,B,1,419,191,610,
+97,2024-04-29 12:22:02,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,43,97,2,Math,"If 120 is reduced to 96, what is the reduction percent?
+Choices:
+  A: 30%
+  B: 40%
+  C: 20%
+  D: 10%
+  E: 5%
+","Choices:
+  A: 30%
+  B: 40%
+  C: 20%
+  D: 10%
+  E: 5%
+","Thought:
+The reduction is 120 - 96 = 24.
+To find the reduction percent, we need to divide the reduction by the original value and multiply by 100.
+So, (24/120) x 100 = 20%.
+Action: Answer(""C"")","reduction = 120 – 96 = 24
+∴ Reduction percent = (24/120)×100% =20%
+Answer:C",C,C,1,346,57,403,
+100,2024-04-29 12:22:03,gpt-35-turbo,retry,aqua-rat-100,agi-eval/aqua-rat,66,100,2,Math,"A rectangular piece of 150 sq m has a length which is 1m more than the 4 times the breadth. What is the perimeter of the piece?
+Choices:
+  A: 60 m
+  B: 61 m
+  C: 62 m
+  D: 63 m
+  E: 64 m
+","Choices:
+  A: 60 m
+  B: 61 m
+  C: 62 m
+  D: 63 m
+  E: 64 m
+","Thought:
+Let's assume the breadth of the rectangular piece is ""x"".
+Then, the length of the rectangular piece is 4x+1.
+We know that the area of the rectangular piece is 150 sq m.
+So, x(4x+1) = 150.
+Solving this equation, we get x = 5 m.
+Therefore, the length of the rectangular piece is 4(5)+1 = 21 m.
+The perimeter of the rectangular piece is 2(length + breadth).
+So, the perimeter is 2(21+5) = 52 m.
+Action: Answer(""None of the Above"") [The correct answer is not listed. The correct answer is 52 m.]","Let its breadth be = x m.
+So length will be = (4x+1) m.
+Now,
+x * (4x+1) = 150
+or, 4x^2+x-150 = 0
+or, (4x+25)(x-6) = 0
+Either 4x = -25 or x = 6
+As breadth can not take negetive value so x = 6
+So its length is 4*6+1 = 25
+So perimeter will be 2*(25+6)=62 mLet its breadth be = x m.
+So length will be = (4x+1) m.
+Now,
+x * (4x+1) = 150
+or, 4x^2+x-150 = 0
+or, (4x+25)(x-6) = 0
+Either 4x = -25 or x = 6
+As breadth can not take negetive value so x = 6
+So its length is 4*6+1 = 25
+So perimeter will be 2*(25+6)=62 m
+ANSWER:C",N,C,0,369,146,515,

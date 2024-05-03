@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Logic.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Logic\nContext: A provincial Go team coach selects 4 of the 7 players from E, F, G, H, J, K and M to participate in the professional league.The selection must meet the following conditions? E or F has one person to participate, but not both .One of J or K will participate, but not both.If J participates, then G participates.Unless F participates, M does not participate.\nQuestion: Which two of the following players will be selected by the coach to make the four-person team the only choice?\nChoices:\n  A: F and H\n  C: G and M\n  B: G and J\n  D: H and M\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nLet's analyze each choice:\nA: F and H - If F is selected, then M must be selected (according to the conditions). This leaves only one spot for either E or (J and G) or K. This is not a valid choice.\nB: G and J - If J is selected, then G must be selected (according to the conditions). This leaves two spots for either E or F and either H or M. This is a valid choice.\nC: G and M - If M is selected, then F must be selected (according to the conditions). This leaves only one spot for either E or (J and G) or K. This is not a valid choice.\nD: H and M - If M is selected, then F must be selected (according to the conditions). This leaves only one spot for either E or (J and G) or K. This is not a valid choice.\nAction: Answer(\"B\")"
+    }
+]

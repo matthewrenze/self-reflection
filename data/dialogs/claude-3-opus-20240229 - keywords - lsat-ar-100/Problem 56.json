@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A software company employs exactly seven sales representatives—Kim, Mahr, Parra, Quinn, Stuckey, Tiao, and Udall—to work in its three sales zones—Zone 1, Zone 2, and Zone 3. Each sales representative works in exactly one of the sales zones, in accordance with the following conditions: Either Parra or Tiao (but not both) works in Zone 1. Either Tiao or Udall (but not both) works in Zone 2. Parra and Quinn work in the same sales zone as each other. Stuckey and Udall work in the same sales zone as each other. There are more of the sales representatives working in Zone 3 than in Zone 2.\nQuestion: If more sales representatives work in Zone 1 than in Zone 3, then which one of the following could be true?\nChoices:\n  A: Kim works in Zone 2.\n  B: Mahr works in Zone 2.\n  C: Parra works in Zone 3.\n  D: Tiao works in Zone 1.\n  E: Udall works in Zone 3.\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nError Keywords:\n - Incorrect assumption\n - Faulty logic\n - Distribution error\n - Zonal allocation error\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Let's think through this step-by-step:\n1. We know that either Parra or Tiao (but not both) works in Zone 1. And either Tiao or Udall (but not both) works in Zone 2.\n2. Parra and Quinn work in the same zone, and Stuckey and Udall work in the same zone.\n3. There are more sales reps in Zone 3 than in Zone 2.\n4. The question states that more sales reps work in Zone 1 than in Zone 3. \n5. Let's consider the choices:\n   A) Kim works in Zone 2 - This could be true, as we don't have any information about where Kim works.\n   \n   B) Mahr works in Zone 2 - Similar to A, this could be true.\n   \n   C) Parra works in Zone 3 - This can't be true. If Parra works in Zone 3, then Quinn also works in Zone 3. But we're told that more reps work in Zone 1 than Zone 3.\n   \n   D) Tiao works in Zone 1 - This could be true. If Tiao works in Zone 1, then Parra works in Zone 3 (with Quinn), and Udall works in Zone 2 (with Stuckey). This satisfies all the conditions.\n   \n   E) Udall works in Zone 3 - This can't be true. If Udall works in Zone 3, then Stuckey also works in Zone 3. But we're told that more reps work in Zone 1 than Zone 3.\n6. Therefore, the correct answer is D.\nAction: Answer(\"D\")"
+    }
+]

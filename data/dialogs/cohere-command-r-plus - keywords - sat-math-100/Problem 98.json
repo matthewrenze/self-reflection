@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Math.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Math\nQuestion: $$\\begin{array}{r}3 x+4 y=-23 \\\\2 y-x=-19\\end{array}$$What is the solution $(x, y)$ to the system of equations above?\nChoices:\n  A: $(-5,-2)$\n  B: $(3,-8)$\n  C: $(4,-6)$\n  D: $(9,-6)$\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nError Keywords:\n- Calculation error\n- Simplification error\n- Fraction arithmetic error\n\nSolution: Solving the system of equations step by step: \n\n$\\begin{array}{r}\n3x + 4y = -23 \\quad \\cdot2 \\\\\n6x + 8y = -46 \\\\\n\\end{array}$\n\n$\\begin{array}{r}\n2y - x = -19 \\quad \\cdot4 \\\\\n8y - 4x = -76 \\\\\n\\end{array}$\n\nAdding the two equations eliminates $y$:\n$6x + 8y + 8y - 4x = -46 - 76$\n$14y = -122$\n$y = -\\frac{122}{14} = -8.71$ (rounded to two decimal places)\n\nNow, plug $y$ into one of the original equations to find $x$:\n$3x + 4y = -23$\n$3x + 4(-8.71) = -23$\n$3x - 34.84 = -23$\n$3x = 11.84$\n$x = \\frac{11.84}{3} \\approx 3.95$ (rounded to two decimal places)\n\nSo, the solution is $(x, y) \\approx (3.95, -8.71)$, which is closest to choice **B**.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Action: Answer(\"B\")"
+    }
+]

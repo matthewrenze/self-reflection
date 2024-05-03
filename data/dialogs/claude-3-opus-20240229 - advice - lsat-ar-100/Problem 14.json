@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: At a concert, exactly eight compositions—F, H, L, O, P, R, S, and T—are to be performed exactly once each, consecutively and one composition at a time. The order of their performance must satisfy the following conditions: T is performed either immediately before F or immediately after R. At least two compositions are performed either after F and before R, or after R and before F. O is performed either first or fifth. The eighth composition performed is either L or H. P is performed at some time before S. At least one composition is performed either after O and before S, or after S and before O.\nQuestion: If T is performed fifth and F is performed sixth, then S must be performed either\nChoices:\n  A: fourth or seventh\n  B: third or sixth\n  C: third or fourth\n  D: second or seventh\n  E: first or fourth\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nAdvice:\n - Always carefully read and understand all the conditions given in the problem.\n - Break down complex problems into smaller, manageable pieces.\n - Consider the implications of each condition and how they constrain the possible solutions.\n - Systematically work through the possibilities, eliminating those that violate the conditions.\n - Double-check your reasoning to ensure you haven't overlooked any conditions or made invalid deductions.\n - If stuck, try working backwards from the given answer choices to see which ones could be possible.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Okay, let's think through this step-by-step:\n1. T is performed fifth and F is performed sixth. This satisfies the condition that T is performed either immediately before F or immediately after R.\n2. Since there must be at least two compositions performed either after F and before R, or after R and before F, R must be performed either second or eighth. \n3. O must be performed either first or fifth, but since T is fifth, O must be first.\n4. The eighth composition is either L or H. Since R can't be eighth (because there needs to be two compositions between F and R), the eighth must be L or H.\n5. P must be performed before S. And there must be at least one composition either after O and before S, or after S and before O.\n6. If R is second, then the order so far is: O _ R _ T F _ _\n   The remaining slots are 3rd, 4th, 7th, 8th. \n   P and S must be 3rd and 4th in some order to satisfy the conditions. \n   So S must be either 3rd or 4th.\n7. If R is eighth, then the order so far is: O _ _ _ T F _ R\n   The remaining slots are 2nd, 3rd, 4th, 7th.\n   P and S must be 2nd and 7th in some order to satisfy the conditions.\n   So S must be either 2nd or 7th.\nTherefore, S must be performed either second or seventh.\nAction: Answer(\"D\")"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: For the school paper, five students—Jiang, Kramer, Lopez, Megregian, and O'Neill—each review one or more of exactly three plays: Sunset, Tamerlane, and Undulation, but do not review any other plays. The following conditions must apply: Kramer and Lopez each review fewer of the plays than Megregian. Neither Lopez nor Megregian reviews any play Jiang reviews. Kramer and O'Neill both review Tamerlane. Exactly two of the students review exactly the same play or plays as each other.\nQuestion: If exactly three of the students review Undulation, which one of the following could be true?\nChoices:\n  A: Megregian does not review Undulation.\n  B: O'Neill does not review Undulation.\n  C: Jiang reviews Undulation.\n  D: Lopez reviews Tamerlane.\n  E: O'Neill reviews Sunset.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Let's think through this step-by-step:\n1. Kramer and O'Neill both review Tamerlane.\n2. Exactly two students review the same play(s) as each other. Given (1), these two students must be Kramer and O'Neill, and they both review only Tamerlane.\n3. Kramer and Lopez each review fewer plays than Megregian. So Megregian must review at least two plays.\n4. Neither Lopez nor Megregian reviews any play Jiang reviews. So the plays Jiang reviews cannot be reviewed by Lopez or Megregian.\n5. If exactly three students review Undulation, and we know from (2) that Kramer and O'Neill only review Tamerlane, then the three students reviewing Undulation must be Jiang, Lopez, and Megregian.\n6. Looking at the answer choices:\n   A. This is false. As deduced in (5), Megregian must review Undulation.\n   B. This is true. As deduced in (2), O'Neill only reviews Tamerlane, not Undulation.\n   C. This is true. As deduced in (5), Jiang must review Undulation.\n   D. This could be true. Nothing prevents Lopez from also reviewing Tamerlane in addition to Undulation.\n   E. This is false. As deduced in (2), O'Neill only reviews Tamerlane, not Sunset.\nTherefore, of the given choices, both B and C could be true.\nAction: Answer(\"B\")"
+    }
+]

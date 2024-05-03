@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Logic.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Logic\nContext: A company has six general manager assistants F, G, H, I, M and P, and three departments, each of which is in charge of three general manager assistants.Each assistant general manager is in charge of at least one department.The following conditions must be met? (1) There is only one assistant to the general manager in charge of three departments at the same time.(2) F and G are not in charge of the same department.(3) H and I are not in charge of the same department.\nQuestion: If F and M are not in charge of the same department, which of the following must be true?\nChoices:\n  A: F and H are in charge of the same department.\n  B: F and I are in charge of the same department.\n  C: I and P are in charge of the same department.\n  D: M and G are in charge of the same department.\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nNo reflection information provided.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\nWe know:\n* One assistant manages all three departments.\n* F and G don't share departments.\n* H and I don't share departments.\n* F and M don't share departments.\nWe need to find a statement that MUST be true given the above.\nAnalyzing options:\n* **A and B:** We have no information about F and H or F and I sharing departments. \n* **C:** We have no information about I and P sharing departments.\n* **D:** If F and M don't share departments, and only one person manages all three, then G must be the one managing all three. This means G shares a department with everyone, including M.\nAction: Answer(\"D\") \n"
+    }
+]

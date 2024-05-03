@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: At a concert, exactly eight compositions—F, H, L, O, P, R, S, and T—are to be performed exactly once each, consecutively and one composition at a time. The order of their performance must satisfy the following conditions: T is performed either immediately before F or immediately after R. At least two compositions are performed either after F and before R, or after R and before F. O is performed either first or fifth. The eighth composition performed is either L or H. P is performed at some time before S. At least one composition is performed either after O and before S, or after S and before O.\nQuestion: Which one of the following lists the compositions in an order in which they could be performed during the concert, from first through eighth?\nChoices:\n  A: L, P, S, R, O, T, F, H\n  B: O, T, P, F, S, H, R, L\n  C: P, T, F, S, L, R, O, H\n  D: P, T, F, S, O, R, L, H\n  E: T, F, P, R, O, L, S, H\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n*   **Rule 1:** T is before F or after R.\n*   **Rule 2:** At least two compositions between F and R.\n*   **Rule 3:** O is first or fifth.\n*   **Rule 4:** Eighth is L or H.\n*   **Rule 5:** P before S.\n*   **Rule 6:** At least one composition between O and S.\n**Analysis of Choices:**\n*   **A:** Violates Rule 1 (T after F) and Rule 2 (only one composition between F and R).\n*   **B:** Violates Rule 2 (only one composition between F and R).\n*   **C:** Violates Rule 1 (T before F) and Rule 6 (no compositions between O and S).\n*   **D:** Satisfies all rules. \n*   **E:** Violates Rule 3 (O is not first or fifth).\nAction: Answer(\"D\") \n"
+    }
+]

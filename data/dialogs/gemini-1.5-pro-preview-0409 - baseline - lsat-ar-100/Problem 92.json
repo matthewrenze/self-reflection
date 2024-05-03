@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A software company employs exactly seven sales representatives—Kim, Mahr, Parra, Quinn, Stuckey, Tiao, and Udall—to work in its three sales zones—Zone 1, Zone 2, and Zone 3. Each sales representative works in exactly one of the sales zones, in accordance with the following conditions: Either Parra or Tiao (but not both) works in Zone 1. Either Tiao or Udall (but not both) works in Zone 2. Parra and Quinn work in the same sales zone as each other. Stuckey and Udall work in the same sales zone as each other. There are more of the sales representatives working in Zone 3 than in Zone 2.\nQuestion: Quinn CANNOT work in the same sales zone as which one of the following?\nChoices:\n  A: Kim\n  B: Mahr\n  C: Stuckey\n  D: Tiao\n  E: Udall\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n*   Parra and Quinn work in the same zone. \n*   Either Parra or Tiao is in Zone 1 (but not both).\n*   Either Tiao or Udall is in Zone 2 (but not both).\n*   Stuckey and Udall work in the same zone.\n*   Zone 3 has more representatives than Zone 2.\nFrom this, we know:\n*   If Parra is in Zone 1, then Quinn is also in Zone 1 and Tiao is NOT. This would force Udall into Zone 2 and Stuckey with him. This leaves Zone 3 empty, violating the rule that it must have more representatives than Zone 2. So, Parra CANNOT be in Zone 1.\n*   Therefore, Tiao MUST be in Zone 1. This means Parra and Quinn are NOT in Zone 1.\n*   Since Tiao is in Zone 1, Udall CANNOT be in Zone 2. This means Udall and Stuckey MUST be in Zone 3.\n*   This leaves Parra and Quinn to be in Zone 2.\nTherefore, Quinn cannot be with Stuckey (who is in Zone 3).\nAction: Answer(\"C\") \n"
+    }
+]

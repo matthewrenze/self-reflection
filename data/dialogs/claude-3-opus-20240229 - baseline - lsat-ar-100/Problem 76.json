@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A loading dock consists of exactly six bays numbered 1 through 6 consecutively from one side of the dock to the other. Each bay is holding a different one of exactly six types of cargo—fuel, grain, livestock, machinery, produce, or textiles. The following apply: The bay holding grain has a higher number than the bay holding livestock. The bay holding livestock has a higher number than the bay holding textiles. The bay holding produce has a higher number than the bay holding fuel. The bay holding textiles is next to the bay holding produce.\nQuestion: Which one of the following must be false?\nChoices:\n  A: The bay holding fuel is next to the bay holding machinery.\n  B: The bay holding grain is next to the bay holding machinery.\n  C: The bay holding livestock is next to the bay holding fuel.\n  D: The bay holding produce is next to the bay holding livestock.\n  E: The bay holding textiles is next to the bay holding fuel.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Let's think through this step-by-step:\n1. The bay holding grain has a higher number than the bay holding livestock, which in turn has a higher number than the bay holding textiles. So the order of these three, from lowest to highest bay number, is: textiles, livestock, grain.\n2. The bay holding produce has a higher number than the bay holding fuel. So fuel comes before produce.\n3. The bay holding textiles is next to the bay holding produce. Given the information from point 1, this means that the order of these four, from lowest to highest bay number, must be: fuel, produce, textiles, livestock.\n4. The only cargo type not yet placed is machinery. It cannot go between produce and textiles (as they are next to each other), nor can it go between textiles and livestock (for the same reason).\n5. This leaves three possible positions for machinery: before fuel, between fuel and produce, or after livestock.\n6. If machinery is before fuel, then fuel would be next to produce, contradicting the statement that textiles is next to produce.\n7. If machinery is between fuel and produce, then fuel would be next to machinery. This scenario is described in choice A, so choice A could be true.\n8. If machinery is after livestock, then grain would be next to machinery. This scenario is described in choice B, so choice B could be true.\n9. Choice C states that livestock is next to fuel, but we know from the order established in point 3 that produce and textiles are between fuel and livestock, so this must be false.\n10. Choice D states that produce is next to livestock, but we know textiles is between them, so this must be false.\n11. Choice E states that textiles is next to fuel, but we know produce is between them, so this must be false.\nTherefore, the answer is C. Livestock cannot be next to fuel.\nAction: Answer(\"C\")"
+    }
+]

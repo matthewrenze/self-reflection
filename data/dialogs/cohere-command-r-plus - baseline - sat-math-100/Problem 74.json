@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Math.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Math\nQuestion: If $x>3$, which of the following is equivalent to $\\frac{1}{\\frac{1}{x+2}+\\frac{1}{x+3}}$ ?\nChoices:\n  A: $\\frac{2 x+5}{x^{2}+5 x+6}$\n  B: $\\frac{x^{2}+5 x+6}{2 x+5}$\n  C: $2 x+5$\n  D: $x^{2}+5 x+6$\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nFirst, we can rationalize the denominator of the fraction by multiplying both the numerator and denominator by the conjugate of the denominator:\n$\\frac{1}{\\frac{1}{x+2}+\\frac{1}{x+3}} \\cdot \\frac{(x+2)(x+3)}{(x+2)(x+3)} = \\frac{(x+2)(x+3)}{(x+2)+(x+3)} = \\frac{(x+2)(x+3)}{2 x+5}$.\n\nThen, we multiply the numerator and denominator by $2x+5$:\n$\\frac{(x+2)(x+3)}{2 x+5} \\cdot \\frac{2x+5}{2x+5} = \\frac{(x+2)(x+3)(2x+5)}{(2x+5)^2}$.\n\nSimplifying the numerator, we get:\n$(x+2)(x+3)(2x+5) = 2x^3 + 13x^2 + 26x + 30$.\n\nSimplifying the denominator, we get:\n$(2x+5)^2 = 4x^2 + 20x + 25$.\n\nSo, the simplified fraction is:\n$\\frac{2x^3 + 13x^2 + 26x + 30}{4x^2 + 20x + 25}$.\n\nThis matches the numerator of choice A, $\\frac{2x+5}{x^2+5x+6}$.\nAction: Answer(\"A\")"
+    }
+]

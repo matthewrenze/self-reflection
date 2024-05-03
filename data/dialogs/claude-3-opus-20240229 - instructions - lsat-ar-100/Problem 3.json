@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: An administrator must assign parking spaces to six new employees: Robertson, Souza, Togowa, Vaughn, Xu, and Young. Each of the six employees must be assigned one of the following parking spaces: #1, #2, #3, #4, #5, or #6. No two employees can be assigned the same parking space. The following rules govern the assignment of parking spaces: Young must be assigned a higher-numbered parking space than Togowa. Xu must be assigned a higher-numbered parking space than Souza. Robertson must be assigned a higher-numbered parking space than Young. Robertson must be assigned parking space #1, #2, #3, or #4.\nQuestion: If Robertson is assigned parking space #3, then which one of the following must be true?\nChoices:\n  A: Souza is assigned parking space #4.\n  B: Togowa is assigned parking space #2.\n  C: Vaughn is assigned parking space #5.\n  D: Xu is assigned parking space #6.\n  E: Young is assigned parking space #2.\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nInstructions:\n1. Carefully read the question and note any specific information given (e.g. Robertson is in space #3).\n2. Make a list of all the rules/constraints given in the question. \n3. Consider each rule one by one, noting what can be definitively determined from each.\n4. When a definite assignment can be made based on the given information, make that assignment.\n5. Continue working through the constraints logically until the question can be answered.\n6. If the question cannot be fully answered, determine what can be known for certain.\n7. Choose the answer choice that matches the definite determination.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Okay, let's approach this step-by-step:\n1. The key information is that Robertson is assigned parking space #3.\n2. The rules/constraints are:\n   - Young must have a higher space than Togowa\n   - Xu must have a higher space than Souza  \n   - Robertson must have a higher space than Young\n   - Robertson must be in space #1, #2, #3, or #4\n3. With Robertson in #3:\n   - Young must be in #1 or #2 (lower than Robertson)\n   - Togowa must be in #1 (lower than Young)\n   \n4. So far the definite assignments are:\n   - Robertson: #3\n   - Togowa: #1\n   - Young: #2\n5. The remaining people are Souza, Xu and Vaughn. \n   - Xu must have a higher space than Souza.\n   - The remaining higher spaces are #4, #5 and #6.\n   \n6. Therefore:\n   - Souza must be in #4 or #5\n   - Xu must be in #5 or #6, higher than Souza\n   - Vaughn gets whichever of #4, #5, #6 is left\n   \n7. The only definite assignment from the answer choices is:\nAction: Answer(\"E\")\nYoung must be assigned parking space #2, since Robertson is in #3 and Togowa is lower than Young."
+    }
+]

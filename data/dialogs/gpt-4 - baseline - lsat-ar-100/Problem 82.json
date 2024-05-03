@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A software company employs exactly seven sales representatives—Kim, Mahr, Parra, Quinn, Stuckey, Tiao, and Udall—to work in its three sales zones—Zone 1, Zone 2, and Zone 3. Each sales representative works in exactly one of the sales zones, in accordance with the following conditions: Either Parra or Tiao (but not both) works in Zone 1. Either Tiao or Udall (but not both) works in Zone 2. Parra and Quinn work in the same sales zone as each other. Stuckey and Udall work in the same sales zone as each other. There are more of the sales representatives working in Zone 3 than in Zone 2.\nQuestion: Which one of the following could be an accurate matching of the sales representatives to the sales zones in which they work?\nChoices:\n  A: Zone 1: Kim, Parra Zone 2: Stuckey, Udall Zone 3: Mahr, Quinn, Tiao\n  B: Zone 1: Kim, Tiao Zone 2: Stuckey, Udall Zone 3: Mahr, Parra, Quinn\n  C: Zone 1: Parra, Quinn Zone 2: Kim, Udall Zone 3: Mahr, Stuckey, Tiao\n  D: Zone 1: Stuckey, Udall Zone 2: Kim, Tiao Zone 3: Mahr, Parra, Quinn\n  E: Zone 1: Tiao Zone 2: Kim, Parra, Quinn Zone 3: Stuckey, Udall\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\nThe conditions are as follows:\n1. Either Parra or Tiao (but not both) works in Zone 1.\n2. Either Tiao or Udall (but not both) works in Zone 2.\n3. Parra and Quinn work in the same sales zone as each other.\n4. Stuckey and Udall work in the same sales zone as each other.\n5. There are more of the sales representatives working in Zone 3 than in Zone 2.\nLet's evaluate each choice:\nA: Zone 1: Kim, Parra Zone 2: Stuckey, Udall Zone 3: Mahr, Quinn, Tiao\n- This violates condition 3, Parra and Quinn are not in the same zone.\nB: Zone 1: Kim, Tiao Zone 2: Stuckey, Udall Zone 3: Mahr, Parra, Quinn\n- This satisfies all conditions.\nC: Zone 1: Parra, Quinn Zone 2: Kim, Udall Zone 3: Mahr, Stuckey, Tiao\n- This violates condition 2, Tiao and Udall are not in the same zone.\nD: Zone 1: Stuckey, Udall Zone 2: Kim, Tiao Zone 3: Mahr, Parra, Quinn\n- This violates condition 1, neither Parra nor Tiao are in Zone 1.\nE: Zone 1: Tiao Zone 2: Kim, Parra, Quinn Zone 3: Stuckey, Udall\n- This violates condition 5, Zone 3 does not have more representatives than Zone 2.\nAction: Answer(\"B\")"
+    }
+]

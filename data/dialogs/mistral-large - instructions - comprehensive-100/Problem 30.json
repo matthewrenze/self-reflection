@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: Exactly eight books—F, G, H, I, K, L, M, O—are placed on a bookcase with exactly three shelves—the top shelf, the middle shelf, and the bottom shelf. At least two books are placed on each shelf. The following conditions must apply: More of the books are placed on the bottom shelf than the top shelf. I is placed on the middle shelf. K is placed on a higher shelf than F. O is placed on a higher shelf than L. F is placed on the same shelf as M.\nQuestion: If G is placed on the top shelf, then which one of the following could be a complete and accurate list of the books placed on the middle shelf?\nChoices:\n  A: H, I\n  B: I, L\n  C: H, I, L\n  D: I, K, L\n  E: F, I, M\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nInstructions:\n1. Identify the given conditions and constraints.\n2. Determine the maximum and minimum number of books that can be placed on each shelf based on the given conditions.\n3. Consider all possible placements of the books based on the given conditions.\n4. Eliminate any placements that violate the given conditions.\n5. Choose the answer that matches a possible and valid placement of the books.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n1. Given conditions and constraints:\n   - More books on the bottom shelf than the top shelf.\n   - I is on the middle shelf.\n   - K is higher than F.\n   - O is higher than L.\n   - F and M are on the same shelf.\n   - G is on the top shelf.\n2. Maximum and minimum number of books on each shelf:\n   - Top shelf: Min 2, Max 3 (since more books on bottom)\n   - Middle shelf: Min 2, Max 4 (since at least 2 on each shelf)\n   - Bottom shelf: Min 3, Max 5 (since more books than top)\n3. Possible placements of the books:\n   - Top shelf: G, [one or two more books]\n   - Middle shelf: I, [one, two, or three more books]\n   - Bottom shelf: [three, four, or five books]\n4. Eliminate placements that violate conditions:\n   - Since K > F and O > L, neither F nor L can be on the top shelf.\n   - Since F and M are together, they can't be on the top shelf (only one spot left).\n5. Choose the answer that matches a possible and valid placement:\n   - A: H, I (Valid: H can be on the middle shelf)\n   - B: I, L (Invalid: L can't be on the middle shelf)\n   - C: H, I, L (Invalid: L can't be on the middle shelf)\n   - D: I, K, L (Invalid: L can't be on the middle shelf)\n   - E: F, I, M (Invalid: F can't be on the middle shelf)\n\nAction: Answer(\"A\")"
+    }
+]

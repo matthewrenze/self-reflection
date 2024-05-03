@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Math.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Math\nQuestion: $$\\begin{array}{r}3 x+4 y=-23 \\\\2 y-x=-19\\end{array}$$What is the solution $(x, y)$ to the system of equations above?\nChoices:\n  A: $(-5,-2)$\n  B: $(3,-8)$\n  C: $(4,-6)$\n  D: $(9,-6)$\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nInstructions:\n1. Choose a variable to eliminate by manipulating one or both equations.\n2. Multiply one or both equations by appropriate constants to achieve the same coefficient for the chosen variable with opposite signs.\n3. Add or subtract the equations to eliminate the chosen variable.\n4. Solve for the remaining variable.\n5. Substitute the value of the found variable back into one of the original equations.\n6. Solve for the other variable, paying close attention to signs during calculations.\n7. Write the solution as an ordered pair (x, y).\n8. Double-check your solution by substituting both values back into both original equations to ensure they hold true.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\nFollowing the reflection instructions:\n1. Eliminate x: It has smaller coefficients, making calculations easier.\n2. Multiply the second equation by 3 to get -3x:\n$$\\begin{array}{r}3x+4y=-23 \\\\ -3x+6y=-57\\end{array}$$\n3. Add the equations:\n$$10y = -80$$\n4. Solve for y:\n$$y = -8$$\n5. Substitute y into the first original equation:\n$$3x + 4(-8) = -23$$\n6. Solve for x:\n$$3x = 9$$\n$$x = 3$$\n7. Solution: (3, -8)\n8. Double-check: Both equations hold true with x=3 and y=-8.\nAction: Answer(\"B\") \n"
+    }
+]

@@ -1,0 +1,88 @@
+# Model: llama-2-70b-chat | Agent: baseline | Exam: sat-math-100 | Problem 96 of 100
+## System:
+You are an expert in Math.
+Your task is to answer the following multiple-choice questions.
+Think step-by-step to ensure you have the correct answer.
+Then, answer the question using the following format 'Action: Answer("[choice]")'  
+The parameter [choice] is the letter or number of the answer you want to select (e.g. "A", "B", "C", or "D")
+For example, 'Answer("C")' will select the choice "C" as the best answer.
+You MUST select one of the available choices; the answer CANNOT be "None of the Above".
+Be concise in your response but include any essential information.
+## User 1:
+Topic: Geography
+Question: What is the capital of the state where Johns Hopkins University is located?
+Choices:
+  A: Baltimore
+  B: Annapolis
+  C: Des Moines
+  D: Las Vegas
+## Assistant 1:
+Thought: 
+Johns Hopkins University is located in Baltimore, Maryland.
+The capital of Maryland is Annapolis.
+Action: Answer("B")
+## User 2:
+Topic: Math
+Question: A rectangle was altered by increasing its length by 10 percent and decreasing its width by $p$ percent. If these alterations decreased the area of the rectangle by 12 percent, what is the value of $p$ ?
+Choices:
+  A: 12
+  B: 15
+  C: 20
+  D: 22
+## Assistant 2:
+  Let's call the original length and width of the rectangle $L$ and $W$, respectively.
+The area of the original rectangle is $A = LW$.
+
+After the alterations, the length is $L + 10\%$ of $L$ = $1.1L$ and the width is $W - p\%$ of $W$ = $0.9W$ (since $p$ is a percentage, we can write it as $0.9W$).
+
+The area of the modified rectangle is $A' = (1.1L)(0.9W) = 0.99LW$.
+
+The question states that the area of the modified rectangle is 12% less than the area of the original rectangle, so we can set up the equation:
+
+$0.99LW = 0.88A$
+
+Now, we can solve for $p$. We know that $L$ and $W$ are positive, so we can divide both sides of the equation by $LW$ to get:
+
+$0.99 = 0.88\frac{LW}{LW}$
+
+$1 = 0.88\frac{L}{W}$
+
+$W = 0.88L$
+
+Now, we can substitute this expression for $W$ into the equation for the area of the modified rectangle:
+
+$A' = (1.1L)(0.88L) = 0.99L^2$
+
+We know that the area of the modified rectangle is 12% less than the area of the original rectangle, so we can set up the equation:
+
+$0.99L^2 = 0.88A$
+
+Now, we can solve for $L$:
+
+$L = \sqrt{\frac{0.88A}{0.99}} = \sqrt{\frac{A}{1.1}}$
+
+Now, we can substitute this expression for $L$ into the equation for $W$:
+
+$W = 0.88L = 0.88\sqrt{\frac{A}{1.1}}$
+
+Now, we can find $p$ by substituting $W$ into the equation for $A'$:
+
+$A' = (1.1L)(0.88\sqrt{\frac{A}{1.1}}) = 0.99L^2$
+
+$0.99L^2 = 0.88A$
+
+$L^2 = \frac{0.88A}{0.99}$
+
+$L = \sqrt{\frac{0.88A}{0.99}}$
+
+$W = 0.88L = 0.88\sqrt{\frac{0.88A}{0.99}}$
+
+$p = \frac{W}{L} = \frac{0.88\sqrt{\frac{0.88A}{0.99}}}{\sqrt{\frac{0.88A}{0.99}}} = 0.88$
+
+Therefore, the value of $p$ is $0.88$, which corresponds to choice $B$.
+
+Action: Answer("B")
+## Result:
+Agent Answer: B
+Correct Answer: C
+Score: 0

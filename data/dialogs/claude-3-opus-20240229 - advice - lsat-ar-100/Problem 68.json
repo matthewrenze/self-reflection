@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: An editor will edit seven articles, one at a time. Three of the articles—G, H, and J—cover finance; three other articles—Q, R, and S—cover nutrition; and the remaining article, Y, covers wildlife. The order in which the articles are edited is subject to the following conditions: Consecutive articles cannot cover the same topic as each other. S can be earlier than Q only if Q is third. S must be earlier than Y. J must be earlier than G, and G must be earlier than R.\nQuestion: If J is third, which one of the following could be true?\nChoices:\n  A: G is fourth\n  B: His sixth\n  C: Q is first\n  D: S is second\n  E: Y is fifth\nReflection:\nYou previously answered this question incorrectly.\nThen you reflected on the problem, your solution, and the correct answer.\nUse your self-reflection (below) to help you answer this question.\nAny information that you are not allowed to see will be marked [REDACTED].\nAdvice:\n - In ordering problems, always consider all given constraints\n - Deduce additional constraints from the given information\n - Systematically evaluate all possibilities for consistency with constraints\n - Be careful not to make unwarranted assumptions\n - Double-check your reasoning for logical consistency\n - Eliminate choices methodically based on violations of constraints\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Okay, let's think through this step-by-step, considering all the constraints:\n1. Articles on the same topic can't be consecutive. \n2. S can only be earlier than Q if Q is third.\n3. S must be earlier than Y.\n4. J must be earlier than G, which must be earlier than R.\n5. We're told J is third.\nFrom constraint 4, since J is third, G must be 4th or later, and R must be 5th or later. This eliminates choice A (G is fourth).\nY (the wildlife article) must be after S per constraint 3. The only spot left for Y is 7th, as the other spots are taken by finance and nutrition articles. This eliminates choice E (Y is fifth).\nQ and R have to be separated by a finance article per constraint 1. The only way to do this with R 5th or later is for H to be 6th. R is then 7th. \nSo far the order is:\n1. ?\n2. S (nutrition) \n3. J (finance)\n4. ?\n5. ?\n6. H (finance) \n7. R (nutrition)\nQ can't be 1st because then S would be before it (violating constraint 2). So Q is 4th or 5th.\nIf Q is 4th, then G is 5th. But if Q is 5th, then G could be 1st or 4th.\nSo G could be 1st, eliminating choice B (H is sixth). And Q could be 1st, so choice C is possible.\nIn summary, the only possible choice is C (Q is first).\nAction: Answer(\"C\")"
+    }
+]

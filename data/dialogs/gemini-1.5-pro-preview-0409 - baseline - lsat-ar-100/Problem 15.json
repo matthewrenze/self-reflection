@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Law.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Law\nContext: A shopping center has exactly seven spaces—space 1 through space 7—arranged in a straight row. Seven businesses—an optometrist, a pharmacy, two restaurants, a shoe store, a toy store, and a veterinarian—will be located in the shopping center, one in each space. The locations of the businesses are subject to the following constraints: The pharmacy must be at one end of the row and one of the restaurants at the other. The two restaurants must be separated by at least two other businesses. The pharmacy must be next to either the optometrist or the veterinarian. The toy store cannot be next to the veterinarian.\nQuestion: If the shoe store is in space 4, which one of the following must be true?\nChoices:\n  A: The optometrist is next to a restaurant.\n  B: The pharmacy is next to the veterinarian.\n  C: A restaurant is next to the toy store.\n  D: The shoe store is next to the toy store.\n  E: The shoe store is next to the veterinarian.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\n1. **Pharmacy Placement:** The pharmacy must be at one end, so either space 1 or space 7.\n2. **Restaurant Placement:** One restaurant must be at the other end, leaving the second restaurant to be placed with a gap of at least two spaces from the first.\n3. **Shoe Store Placement:** Given as space 4.\n4. **Constraints:**\n    - Pharmacy needs the optometrist or veterinarian next to it.\n    - Toy store cannot be next to the veterinarian.\nAnalysis:\n*  If the pharmacy is at space 1, the veterinarian or optometrist takes space 2. This leaves space 7 for the second restaurant. To maintain a gap of two spaces between restaurants, the remaining spaces (3, 5, and 6) must be filled by the toy store, optometrist/veterinarian (whichever is not in space 2), and the remaining business.  In this scenario, the shoe store (space 4) cannot be next to the veterinarian.\n*  If the pharmacy is at space 7, the veterinarian or optometrist takes space 6. This leaves space 1 for the second restaurant.  Similar to the previous scenario, spaces 2, 3, and 5 will be filled by the remaining businesses, ensuring the shoe store (space 4) is not next to the veterinarian.\nTherefore, in both possible arrangements, the shoe store is not next to the veterinarian.\nAction: Answer(\"E\") \n"
+    }
+]

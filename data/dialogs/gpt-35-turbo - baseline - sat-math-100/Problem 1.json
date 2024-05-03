@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "You are an expert in Math.\nYour task is to answer the following multiple-choice questions.\nThink step-by-step to ensure you have the correct answer.\nThen, answer the question using the following format 'Action: Answer(\"[choice]\")'  \nThe parameter [choice] is the letter or number of the answer you want to select (e.g. \"A\", \"B\", \"C\", or \"D\")\nFor example, 'Answer(\"C\")' will select the choice \"C\" as the best answer.\nYou MUST select one of the available choices; the answer CANNOT be \"None of the Above\".\nBe concise in your response but include any essential information."
+    },
+    {
+        "role": "user",
+        "content": "Topic: Geography\nQuestion: What is the capital of the state where Johns Hopkins University is located?\nChoices:\n  A: Baltimore\n  B: Annapolis\n  C: Des Moines\n  D: Las Vegas"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought: \nJohns Hopkins University is located in Baltimore, Maryland.\nThe capital of Maryland is Annapolis.\nAction: Answer(\"B\")"
+    },
+    {
+        "role": "user",
+        "content": "Topic: Math\nQuestion: $$h=-16 t^{2}+v t+k$$The equation above gives the height $h$, in feet, of a ball $t$ seconds after it is thrown straight up with an initial speed of $v$ feet per second from a height of $k$ feet. Which of the following gives $v$ in terms of $h, t$, and $k$ ?\nChoices:\n  A: $v=h+k-16 t$\n  B: $v=\\frac{h-k+16}{t}$\n  C: $v=\\frac{h+k}{t}-16 t$\n  D: $v=\\frac{h-k}{t}+16 t$\n"
+    },
+    {
+        "role": "assistant",
+        "content": "Thought:\nTo solve for $v$, we need to isolate it in the given equation.\nAction: \nRearranging the given equation, we get:\n$$h=k+v t-16 t^{2}$$\n$$16 t^{2}-v t+(h-k)=0$$\nUsing the quadratic formula, we get:\n$$t=\\frac{-(-v)\\pm \\sqrt{(-v)^{2}-4(16)(h-k)}}{2(16)}$$\nSimplifying the expression under the square root:\n$$(-v)^{2}-4(16)(h-k)=v^{2}-1024h+1024k$$\nSubstituting the value of $t$ in the original equation:\n$$h=k+v\\left(\\frac{-v\\pm \\sqrt{v^{2}-1024h+1024k}}{32}\\right)$$\nSimplifying the expression inside the parenthesis:\n$$\\frac{-v\\pm \\sqrt{v^{2}-1024h+1024k}}{32}=\\frac{1}{v}\\left(-\\frac{v^{2}}{32}\\pm \\frac{\\sqrt{v^{2}-1024h+1024k}}{32}\\right)$$\nSubstituting this value of $t$ in the equation derived from the original equation:\n$$h=k-\\frac{v^{2}}{32}\\pm \\frac{v}{32}\\sqrt{v^{2}-1024h+1024k}$$\nSimplifying the expression inside the square root:\n$$v^{4}-64(v^{2})(h-k)+1024(h-k)^{2}=v^{4}-64hv^{2}+1024k^{2}$$\nSimplifying the equation:\n$$64hv^{2}=1024k^{2}+64(k-h)(h-k)$$\n$$v^{2}=\\frac{1024k^{2}+64(k-h)(h-k)}{64h}$$\n$$v^{2}=16k^{2}+\\frac{(h-k)(k-h)}{h}$$\nTaking the square root of both sides:\n$$v=\\sqrt{16k^{2}+\\frac{(h-k)(k-h)}{h}}$$\nSimplifying the expression:\n$$v=\\sqrt{16k^{2}+\\frac{h^{2}-2hk+k^{2}}{h}}$$\n$$v=\\sqrt{\\frac{16k^{2}h+h^{2}-2hk+k^{2}}{h}}$$\n$$v=\\sqrt{\\frac{(4h-k)^{2}}{h}}$$\n$$v=\\frac{4h-k}{\\sqrt{h}}$$\nAction: Answer(\"D\")"
+    }
+]
