@@ -17,15 +17,15 @@ from logs.log_level import LogLevel
 
 # Set the models
 model_names = [
-    # "gpt-35-turbo",
-    # "gpt-4",
-    # "llama-2-7b-chat",
-    # "llama-2-70b-chat",
-    # "mistral-large",
-    # "cohere-command-r-plus",
-    # "gemini-1.0-pro",
-    # "gemini-1.5-pro-preview-0409",
-    # "claude-3-opus-20240229"
+    "gpt-35-turbo",
+    "gpt-4",
+    "llama-2-7b-chat",
+    "llama-2-70b-chat",
+    "mistral-large",
+    "cohere-command-r-plus",
+    "gemini-1.0-pro",
+    "gemini-1.5-pro-preview-0409",
+    "claude-3-opus-20240229"
 ]
 
 # Set the agent

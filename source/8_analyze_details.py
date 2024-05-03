@@ -154,7 +154,7 @@ for model_name in model_names:
         "Accuracy": baseline_accuracy
     }, ignore_index=True)
 
-results.to_csv(f"{output_file_path}/results_by_model_and_agent.csv", index=False)
+results.to_csv(f"{output_file_path}/results-by-model-and-agent.csv", index=False)
 
 
 # Pivot the results so that model is on the rows, agent is on the columns, and accuracy is the value
@@ -174,5 +174,5 @@ pivot_results = pivot_results[["baseline"] + agent_names]
 pivot_results.columns = [col.capitalize() for col in pivot_results.columns]
 
 # Save the pivot results
-pivot_results.to_csv(f"{output_file_path}/pivot_results_by_model_and_agent.csv")
+pivot_results.to_csv(f"{output_file_path}/pivot-results-by-model-and-agent.csv")
 
