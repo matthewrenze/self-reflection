@@ -5,7 +5,7 @@ In this study, we investigated the effects of self-reflection in large language 
 
 ## Documents
  - [Research paper](https://arxiv.org/abs/2405.06682)
- - [Presentation video](https://youtu.be/VvhpKAXe_Mc)
+ - [Presentation video](https://youtu.be/VCPwYAQTcpE)
  - [Presentation slides](https://matthewrenze.com/wp-content/uploads/presentations/self-reflection.pdf)
  - [Research homepage](https://matthewrenze.com/research/self-reflection-in-llm-agents/)
 
