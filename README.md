@@ -4,7 +4,7 @@
 In this study, we investigated the effects of self-reflection in large language models (LLMs) on problem-solving performance. We instructed nine popular LLMs to answer a series of multiple-choice questions to provide a performance baseline. Then, for each incorrectly answered question, we instructed eight types of self-reflecting LLM agents to reflect on their mistakes and provide themselves with guidance to improve problem-solving. Then, using this guidance, each self-reflecting agent attempted to re-answer the same questions again. Our results indicate that LLM agents are able to significantly improve their problem-solving performance through self-reflection. In addition, we compared the various types of self-reflection to determine their individual contribution to performance. 
 
 ## Documents
- - [Research paper](documents/paper.pdf)
+ - [Research paper](https://arxiv.org/abs/2405.06682)
  - [Presentation video](https://youtu.be/VvhpKAXe_Mc)
  - [Presentation slides](https://matthewrenze.com/wp-content/uploads/presentations/self-reflection.pdf)
  - [Research homepage](https://matthewrenze.com/research/self-reflection-in-llm-agents/)
